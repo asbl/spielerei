@@ -38,7 +38,6 @@ title: "Impressionen"
 
 {{< paige/image height="20rem" src="/images/spielewochenende24/1.jpg" >}}
 
-{{< paige/image height="20rem" src="/images/spielewochenende24/2.jpg" >}}
 
 {{< paige/image height="20rem" src="/images/spielewochenende24/3.jpg" >}}
 
