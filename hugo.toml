@@ -1,0 +1,55 @@
+baseURL = 'http://usinger-spielerei.de/'
+languageCode = 'de'
+title = 'Usinger Spielerei'
+defaultContentLanguage = 'de'
+enablerobotstxt = true
+
+[[module.imports]]
+path = "github.com/willfaught/paige"
+
+[[authors]]
+author = "andreas-siebel"
+
+[authors.andreas-siebel]
+default = false # Credit this author in pages that have no authors parameter
+email = "andreas.siebel@it-teaching.de"
+name = "Andreas Siebel"
+url = "https://www.it-teaching.de"
+
+[paige]
+    external_link_new_tab = true
+
+    [paige.menu]
+        style = "tabs"
+
+
+[languages]
+    [languages.de]
+        weight = 10
+
+    [[languages.de.menu.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
+        weight = 10
+
+    [[languages.de.menu.main]]
+        identifier = "Impressionen"
+        name = "Impressionen"
+        url = "/impressionen"
+        weight = 11
+
+    [[languages.de.menu.main]]
+        identifier = "Geschichte"
+        name = "Geschichte"
+        url = "/geschichte"
+        weight = 12
+
+    [[languages.de.menu.main]]
+        identifier = "Impressum/Datenschutz"
+        name = "Impressum"
+        url = "/impressum"
+        weight = 13
+
+
+
