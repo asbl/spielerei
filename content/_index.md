@@ -40,9 +40,13 @@ Spiele mit uns Brettspiele an jedem zweiten Montag im Monat im ev. Gemeindehaus 
 
 --- 
 
-17:00 - 22:00 Uhr
+## Nächste Termine
+
+ 11.März 2024 - 17:00 - 22:00 Uhr
 
 ---
+
+
 
 
 {{< paige/gallery align="start" >}}
@@ -53,19 +57,13 @@ Pfarrgasse 7 in Usingen - Evangelisches Gemeindehaus
 
 ---
 
-## Nächste Termine
-
- 11.März 2024
-
----
-
 ## Über uns
 
 Lust auf gemeinsames **Spielen** in netter Runde? Du hast Spiele, die Du schon immer mal spielen wolltest, aber dir fehlten stets die Mitspieler? 
 
 Dann laden wir dich herzlich ein. Wir spielen verschiedene **aktuelle Brett- und Kartenspiele**, manchmal Partyspiele, Familienspiele oder auch Spiele mit etwas mehr Strategie.
 
-Unser Leidenschaft äußert sich im Testen, Ausprobieren und Neuentdecken von Spielen. Was wir eher nicht anbieten, sind „Klassiker” wie beispielsweise Monopoly, Mensch-ärgere-dich-nicht, Mau-Mau usw.
+Unser Leidenschaft äußert sich im **Testen, Ausprobieren und Neuentdecken von Spielen**. Was wir eher nicht anbieten, sind „Klassiker” wie beispielsweise Monopoly, Mensch-ärgere-dich-nicht, Mau-Mau usw.
 
 Es stehen bei jedem Treffen einige Gesellschaftsspiele zum Ausprobieren bereit. 
 
@@ -73,7 +71,7 @@ Du kannst auch gerne eigene Spiele mitbringen. Oder du suchst dir eines aus unse
 
 Die Spielerei findet jeden zweiten Montag des Monats von 17:00-22:00 Uhr im Gemeindehaus der evangelischen Gemeinde in Usingen statt.
 
-Alle Spielebegeisterten sind herzlich willkommen!
+**Alle Spielebegeisterten sind herzlich willkommen!**
 
 ---
 {{< paige/gallery align="start" >}}
