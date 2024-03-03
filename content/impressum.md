@@ -20,7 +20,7 @@ paige:
         display: none;
     }
     #paige-title {
-        font-size: 5rem;
+        font-size: 3rem;
     }
     #paige-main {
         text-align: center;

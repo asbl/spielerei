@@ -17,6 +17,18 @@
 
 
 
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
 
 
 
@@ -29,30 +41,463 @@
 
 
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"  xml:lang="en-us"  xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"  xml:lang="de"  xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <atom:link href="http://example.org/rss.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="http://usinger-spielerei.de/rss.xml" rel="self" type="application/rss+xml"/>
 
         
 
-        <description>Recent content</description>
+        <description>Brettspielen in Usingen</description>
 
         
-            <language>en-us</language>
+            <language>de</language>
         
 
         
             <lastBuildDate>Mon, 01 Jan 0001 00:00:00 UTC</lastBuildDate>
         
 
-        <link>http://example.org/</link>
+        <link>http://usinger-spielerei.de/</link>
 
         
 
-        <title>My New Hugo Site</title>
+        <title>Usinger Spielerei</title>
 
         
 
+        
+            <item>
+                
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+
+                
+
+                
+                    
+                    
+                
+
+                
+
+                
+
+                
+
+                
+                    <description><![CDATA[<script src="/timeline/js/timeline.min.js"></script>
+<link href="/timeline/css/timeline.min.css" rel="stylesheet" />
+
+<div class="timeline">
+    <div class="timeline__wrap">
+        <div class="timeline__items">
+            
+
+<div class="timeline__item timeline__item--left fadeIn">
+    <div class="timeline__content">
+        <h3>Montag 12.09.2022</h3>
+        Die erste Spielerei findet statt
+    </div>
+</div>
+
+<div class="timeline__item timeline__item--right fadeIn">
+    <div class="timeline__content">
+        <h3>Sonntag 25.02.2024</h3>
+        Am Spielewochenende in Schmitten wird der Verein &#39;Usinger Spielerei&#39; gegründet
+    </div>
+</div>
+
+
+        </div>
+    </div>
+</div>
+]]></description>
+                
+
+                <guid  isPermaLink="false" >http://usinger-spielerei.de/geschichte/</guid>
+
+                
+                    <link>http://usinger-spielerei.de/geschichte/</link>
+                
+
+                
+                    <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+                
+
+                
+                    <title>Impressionen</title>
+                
+            </item>
+        
+            <item>
+                
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+
+                
+
+                
+                    
+                    
+                
+
+                
+
+                
+
+                
+
+                
+                    <description><![CDATA[<h3 id="spielewochenende-2024">Spielewochenende 2024</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="paige-gallery">
+
+<div class="align-items-start column-gap-3 d-flex flex-wrap justify-content-center row-gap-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+<span class="paige-image">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img      referrerpolicy="no-referrer"  src="http://usinger-spielerei.de/images/spielewochenende24/1.jpg"   style="height: 20rem; width: auto"   ></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+<span class="paige-image">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img      referrerpolicy="no-referrer"  src="http://usinger-spielerei.de/images/spielewochenende24/3.jpg"   style="height: 20rem; width: auto"   ></span>
+
+</div>
+
+</div>
+
+]]></description>
+                
+
+                <guid  isPermaLink="false" >http://usinger-spielerei.de/impressionen/</guid>
+
+                
+                    <link>http://usinger-spielerei.de/impressionen/</link>
+                
+
+                
+                    <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+                
+
+                
+                    <title>Impressionen</title>
+                
+            </item>
+        
+            <item>
+                
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+
+                
+
+                
+                    
+                    
+                
+
+                
+
+                
+
+                
+
+                
+                    <description><![CDATA[<h2 id="impressum">Impressum</h2>
+<p>Andreas Siebel |
+Auf der Schießmauer 5 |
+61250 Usingen |</p>
+<p>Kontakt: <a href="mailto:andreas.siebel@it-teaching.de">andreas.siebel@it-teaching.de</a></p>
+<h2 id="datenschutz">Datenschutz</h2>
+<p>Auf der Seite wird kein Nutzertracking betrieben. Serverseitig werden jedoch in Logs personenbezogene Daten (z.B. die IP Adresse) gespeichert zwecks Fehleranalyse</p>
+<p>Es werden Daten (IP-Adresse) an folgende Dienste übergeben:</p>
+<p>openstreetmap.org</p>
+]]></description>
+                
+
+                <guid  isPermaLink="false" >http://usinger-spielerei.de/impressum/</guid>
+
+                
+                    <link>http://usinger-spielerei.de/impressum/</link>
+                
+
+                
+                    <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+                
+
+                
+                    <title>Impressum/Datenschutz</title>
+                
+            </item>
         
     </channel>
 </rss>
