@@ -44,8 +44,12 @@ Spiele mit uns Brettspiele an jedem zweiten Montag im Monat im ev. Gemeindehaus 
 
 ---
 
-{{< osm src="https://www.openstreetmap.org/export/embed.html?bbox=8.53492319583893%2C50.33366210784383%2C8.536634445190431%2C50.33418429427085&amp;layer=mapnik" >}}
 
+{{< paige/gallery align="start" >}}
+{{< paige/image height="20rem" src="/images/map.png" >}}
+{{< /paige/gallery >}}
+
+Pfarrgasse 7 in Usingen - Evangelisches Gemeindehaus
 
 ---
 

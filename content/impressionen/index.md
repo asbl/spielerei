@@ -1,5 +1,4 @@
 ---
-description: "Brettspielen in Usingen"
 paige:
   search:
     hide_page: true
@@ -34,13 +33,7 @@ title: "Impressionen"
 
 ### Spielewochenende 2024
 
-{{< paige/gallery align="start" >}}
+{{< paige/gallery class="rounded-5" images="spielewochenende24/*" process="300x center resize lanczos picture  webp" linked="unprocessed" type="rows" maxheight="10rem" />}}
 
-{{< paige/image height="20rem" src="/images/spielewochenende24/1.jpg" >}}
-
-
-{{< paige/image height="20rem" src="/images/spielewochenende24/3.jpg" >}}
-
-{{< /paige/gallery >}}
 
 

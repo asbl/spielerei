@@ -1,5 +1,4 @@
 ---
-description: "Brettspielen in Usingen"
 paige:
   search:
     hide_page: true
@@ -29,7 +28,7 @@ paige:
     #paige-content {
       width: 66ch;
     }
-title: "Impressionen"
+title: "Geschichte"
 ---
 
 
