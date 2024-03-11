@@ -46,10 +46,17 @@ url = "https://www.it-teaching.de"
         weight = 12
 
     [[languages.de.menu.main]]
+        identifier = "Verein"
+        name = "Verein"
+        url = "/verein"
+        weight = 13
+
+
+    [[languages.de.menu.main]]
         identifier = "Impressum/Datenschutz"
         name = "Impressum"
         url = "/impressum"
-        weight = 13
+        weight = 14
 
 
 

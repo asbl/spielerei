@@ -37,6 +37,8 @@ title: "Geschichte"
 
 {{< timeline-entry-left title = "Montag 12.09.2022" content = "Die erste Spielerei findet statt" >}}
 
-{{< timeline-entry-right title = "Sonntag 25.02.2024" content = "Am Spielewochenende in Schmitten wird der Verein 'Usinger Spielerei' gegründet">}}
+{{< timeline-entry-right title = "Montag 11.09.2023" content = "1 Jahr Usinger Spielerei" image = "meeple.jpg" alt = "Meeple: 1 Jahr Usinger Spielerei">}}
+
+{{< timeline-entry-left title = "Sonntag 25.02.2024" content = "Am Spielewochenende in Schmitten wird der Verein 'Usinger Spielerei' gegründet">}}
 
 {{< /timeline >}}

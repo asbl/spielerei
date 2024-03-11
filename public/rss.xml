@@ -29,6 +29,10 @@
         
     
 
+    
+        
+    
+
 
 
 
@@ -113,13 +117,27 @@
     <div class="timeline__content">
         <h3>Montag 12.09.2022</h3>
         Die erste Spielerei findet statt
+        <br/>
+        
     </div>
 </div>
 
 <div class="timeline__item timeline__item--right fadeIn">
     <div class="timeline__content">
+        <h3>Montag 11.09.2023</h3>
+        1 Jahr Usinger Spielerei
+         
+        <img src="meeple.jpg" alt="Meeple: 1 Jahr Usinger Spielerei" style="width: 200px; margin-left: auto; margin-right: auto;"/>
+        
+    </div>
+</div>
+
+<div class="timeline__item timeline__item--left fadeIn">
+    <div class="timeline__content">
         <h3>Sonntag 25.02.2024</h3>
         Am Spielewochenende in Schmitten wird der Verein &#39;Usinger Spielerei&#39; gegründet
+        <br/>
+        
     </div>
 </div>
 
@@ -1501,6 +1519,66 @@ Auf der Schießmauer 5 |
 
                 
                     <title>Impressum/Datenschutz</title>
+                
+            </item>
+        
+            <item>
+                
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+
+                
+
+                
+                    
+                    
+                
+
+                
+
+                
+
+                
+
+                
+                    <description><![CDATA[<p>Am 25.02.2024 wurde ein Verein gegründet. Unser Ziel ist es, diesen eintragen zu lassen und als gemeinnütziger Verein tätig zu sein.</p>
+<hr>
+<p>Mitgliedsbeiträge:</p>
+<p>15€ pro Jahr Erwachsene</p>
+<p>5€ pro Jahr Kinder</p>
+<hr>
+<p><a href="satzung.pdf">Satzung</a></p>
+]]></description>
+                
+
+                <guid  isPermaLink="false" >http://usinger-spielerei.de/verein/</guid>
+
+                
+                    <link>http://usinger-spielerei.de/verein/</link>
+                
+
+                
+                    <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+                
+
+                
+                    <title>Usinger Spielerei - Der Verein</title>
                 
             </item>
         

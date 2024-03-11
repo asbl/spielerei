@@ -1,10 +1,16 @@
 {{- $content := .Get "content" -}}
 {{- $title := .Get "title" -}}
+{{- $image := .Get "image" -}}
+{{- $alt := .Get "alt" -}}
 {{- with .Parent -}}
 <div class="timeline__item timeline__item--left fadeIn">
     <div class="timeline__content">
         <h3>{{ $title   }}</h3>
         {{ $content }}
+        <br/>
+        {{ with $image }} 
+        <img src="{{ $image }}" alt="{{ $alt }}" style="width: 200px; margin-left: auto; margin-right: auto;"/>
+        {{ end }}
     </div>
 </div>
 {{- else -}}

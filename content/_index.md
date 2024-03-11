@@ -46,9 +46,6 @@ Spiele mit uns Brettspiele an jedem zweiten Montag im Monat im ev. Gemeindehaus 
 
 ---
 
-
-
-
 {{< paige/gallery align="start" >}}
 {{< paige/image height="20rem" src="/images/map.png" >}}
 {{< /paige/gallery >}}
