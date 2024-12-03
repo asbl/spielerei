@@ -24,9 +24,9 @@ jobs:
       - name: Update Hugo Modules
         run: hugo mod get -u
 
-      # 4. Debugging-Schritt (optional, zur Fehlerdiagnose)
-      - name: Debug Hugo Build
-        run: hugo --debug
+      # 4. Debugging: Prüfe Dateien
+      - name: Debug Shortcode Files
+        run: find layouts/shortcodes -type f
 
       # 5. Website bauen
       - name: Build Hugo site
