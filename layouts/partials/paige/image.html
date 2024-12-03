@@ -229,3 +229,57 @@
     "loading" $loading
     "sizes" $sizes
     "src" $src
+    "srcset" $srcset
+    "style" $style
+    "title" $title
+    "width" $intrinsicwidth
+) }}
+
+{{ if $linked }}
+    {{ if ne $linked "unprocessed" }}
+        {{ $method := "" }}
+        {{ $options := slice }}
+        {{ $size := "" }}
+
+        {{ range split (lower (cond (eq $linked "default") "" $linked)) " " }}
+            {{ if or (eq . "crop") (eq . "fill") (eq . "fit") (eq . "resize") }}
+                {{ $method = . }}
+            {{ else }}
+                {{ with findRE `\d+x\d+|\d+x|x\d+` . 1 }}
+                    {{ $size = index . 0 }}
+                {{ else }}
+                    {{ $options = $options | append . }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        
+        {{ $options = delimit $options " " }}
+
+        {{ if not $method }}
+            {{ $method = "resize" }}
+        {{ end }}
+
+        {{ if not $size }}
+            {{ $size = print $resource.Width "x" $resource.Height }}
+        {{ end }}
+
+        {{ $options = print $size " " $options }}
+
+        {{ if eq $method "crop" }}
+            {{ $resource = $resource.Crop $options }}
+        {{ else if eq $method "fill" }}
+            {{ $resource = $resource.Fill $options }}
+        {{ else if eq $method "fit" }}
+            {{ $resource = $resource.Fit $options }}
+        {{ else if eq $method "resize" }}
+            {{ $resource = $resource.Resize $options }}
+        {{ end }}
+    {{ end }}
+
+    {{ $resource = $resource | fingerprint }}
+    {{ $content = partial "paige/a.html" (dict "content" $content "href" $resource.RelPermalink "page" $page "type" "linked-image") }}
+{{ else if $link }}
+    {{ $content = partial "paige/a.html" (dict "content" $content "href" $link "page" $page) }}
+{{ end }}
+
+<span class="paige-image">{{ $content }}</span>
