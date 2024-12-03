@@ -64,5 +64,5 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -p "$SERVER_PORT" "$SERVER_HOST" >> ~/.ssh/known_hosts
-            rsync -avz -e "ssh -p $SERVER_PORT" public/ "$SERVER_USER@$SERVER_HOST:$SERVER_PATH"
+            rsync -avz -e "ssh -i ~/.ssh/id_rsa -p $SERVER_PORT" public/ "$SERVER_USER@$SERVER_HOST:$SERVER_PATH"
         
