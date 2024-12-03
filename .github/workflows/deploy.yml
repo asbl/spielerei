@@ -30,14 +30,16 @@ jobs:
       # 3. Get paige
       - name: Get Paige
         run: hugo mod get -u github.com/willfaught/paige@v0.92.0
+      
+
+      - name: Vendor Hugo Modules
+        run: hugo mod vendor
 
       # 8. Compile SCSS (optional)
       - name: Compile SCSS
         run: sass assets/css/paige/bootstrap/paige.scss:static/css/paige.css
-        
-      - name: Vendor Hugo Modules
-        run: hugo mod vendor
-
+      
+      
       - name: List all files
         run: find . -type f
 
