@@ -26,7 +26,10 @@ jobs:
 
       # 3. Get paige
       - name: Get Paige
-        run: hugo mod get -u github.com/willfaught/paige/
+        run: hugo mod get -u github.com/willfaught/paige@v0.92.0
+
+      - name: Vendor Hugo Modules
+        run: hugo mod vendor
 
       - name: List all files
         run: find . -type f
