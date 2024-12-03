@@ -9,6 +9,14 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Debug Environment
+        run: |
+          echo "OS Information:"
+          uname -a
+          echo "PATH:"
+          echo $PATH
+          echo "Available Binaries:"
+          ls /usr/bin /bin
       # 1. Repository auschecken
       - name: Checkout repository
         uses: actions/checkout@v3
