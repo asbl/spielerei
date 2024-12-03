@@ -35,6 +35,9 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
+      - name: Install Git
+        run: sudo apt-get update && sudo apt-get install -y git
+
       # 3. Update Hugo Modules
       - name: Update Hugo Modules
         run: hugo mod get -u
