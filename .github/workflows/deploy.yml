@@ -9,25 +9,35 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      # 1. Repository auschecken
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install Hugo
-        run: |
-          sudo apt-get update
-          sudo apt-get install hugo
+      # 2. Setup Hugo mit dem Actions-Modul
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
 
+      # 3. Update Hugo Modules
       - name: Update Hugo Modules
         run: hugo mod get -u
 
-      - name: Build Hugo site
-        run: |
-          hugo
+      # 4. Debugging-Schritt (optional, zur Fehlerdiagnose)
+      - name: Debug Hugo Build
+        run: hugo --debug
 
+      # 5. Website bauen
+      - name: Build Hugo site
+        run: hugo --minify
+
+      # 6. Deploy zur Webspace via SSH
       - name: Deploy to Webspace
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_KEY }}
         run: |
+          mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           rsync -avz --delete public/ benutzername@dein-webspace.de:/path/to/your/website
