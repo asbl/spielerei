@@ -20,8 +20,8 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-    - name: Clear Hugo Module Cache
-      run: rm -rf $HOME/.cache/hugo
+      - name: Clear Hugo Module Cache
+        run: rm -rf $HOME/.cache/hugo
       
       # 3. Update Hugo Modules
       - name: Update Hugo Modules
@@ -39,7 +39,7 @@ jobs:
       - name: Compile SCSS
         run: sass assets/css/paige/bootstrap/paige.scss:static/css/paige.css
       
-      
+
       - name: List all files
         run: find . -type f
 
