@@ -16,7 +16,7 @@ jobs:
       - name: Install Go
         uses: actions/setup-go@v4
         with:
-          go-version: 'latest' 
+          go-version: '1.20' # Du kannst die neueste Go-Version verwenden
 
       - name: Install Dart Sass
         run: sudo snap install dart-sass
