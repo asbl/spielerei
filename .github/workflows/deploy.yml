@@ -17,6 +17,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install hugo
 
+      - name: Install Hugo Modules
+        run: hugo mod get
+
       - name: Build Hugo site
         run: |
           hugo
