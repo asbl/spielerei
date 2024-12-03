@@ -20,6 +20,9 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
+    - name: Clear Hugo Module Cache
+      run: rm -rf $HOME/.cache/hugo
+      
       # 3. Update Hugo Modules
       - name: Update Hugo Modules
         run: hugo mod get -u
@@ -28,6 +31,10 @@ jobs:
       - name: Get Paige
         run: hugo mod get -u github.com/willfaught/paige@v0.92.0
 
+      # 8. Compile SCSS (optional)
+      - name: Compile SCSS
+        run: sass assets/css/paige/bootstrap/paige.scss:static/css/paige.css
+        
       - name: Vendor Hugo Modules
         run: hugo mod vendor
 
