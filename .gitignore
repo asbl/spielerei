@@ -1,5 +1,4 @@
 deploy.sh
-deploy*
 public
 public/*
 *Zone.identifier*

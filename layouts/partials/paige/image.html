@@ -36,14 +36,12 @@
     {{ $mapped := slice }}
 
     {{ range split $style ";" }}
-        {{ $s := . | strings.TrimLeft " " | strings.TrimRight " " }}
+    {{ $s := . | strings.TrimLeft " " | strings.TrimRight " " }}
 
-        {{ if not $s }}
-            {{ continue }}
-        {{ end }}
-
+    {{ if $s }}
         {{ $mapped = $mapped | append $s }}
     {{ end }}
+{{ end }}
 
     {{ $style = $mapped }}
 {{ else }}
