@@ -1,5 +1,5 @@
 module usingerspielerei.de/m
 
-go 1.21.1
+go 1.19
 
-require github.com/willfaught/paige v0.71.4 // indirect
+require github.com/willfaught/paige v0.78.0 // indirect

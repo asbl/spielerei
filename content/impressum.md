@@ -31,13 +31,15 @@ paige:
 title: "Impressum/Datenschutz"
 ---
 
-## Impressum
-
 Andreas Siebel |
 Auf der Schießmauer 5 |
 61250 Usingen |
 
-Kontakt: andreas.siebel@it-teaching.de
+Kontakt: vorstand@usinger-spielerei.de
+
+{{< paige/gallery align="start" >}}
+{{< paige/image height="20rem" src="/images/game7.jpg" >}}
+{{< /paige/gallery >}}
 
 ## Datenschutz
 

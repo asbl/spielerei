@@ -6,7 +6,8 @@
 
 
 
-<html data-paige="Paige theme from https://github.com/willfaught/paige"   lang="de" >
+
+<html  data-paige="Paige theme from https://github.com/willfaught/paige"   lang="de" >
 
     
 
@@ -41,8 +42,8 @@
 <meta content="width=device-width, initial-scale=1" name="viewport">
 
 <meta property="og:title" content="Impressum/Datenschutz" />
-<meta property="og:description" content="Impressum Andreas Siebel | Auf der Schießmauer 5 | 61250 Usingen |
-Kontakt: andreas.siebel@it-teaching.de
+<meta property="og:description" content="Andreas Siebel | Auf der Schießmauer 5 | 61250 Usingen |
+Kontakt: vorstand@usinger-spielerei.de
 Datenschutz Auf der Seite wird kein Nutzertracking betrieben. Serverseitig werden jedoch in Logs personenbezogene Daten (z.B. die IP Adresse) gespeichert zwecks Fehleranalyse
 Es werden Daten (IP-Adresse) an folgende Dienste übergeben:
 openstreetmap.org" />
@@ -53,8 +54,8 @@ openstreetmap.org" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Impressum/Datenschutz"/>
-<meta name="twitter:description" content="Impressum Andreas Siebel | Auf der Schießmauer 5 | 61250 Usingen |
-Kontakt: andreas.siebel@it-teaching.de
+<meta name="twitter:description" content="Andreas Siebel | Auf der Schießmauer 5 | 61250 Usingen |
+Kontakt: vorstand@usinger-spielerei.de
 Datenschutz Auf der Seite wird kein Nutzertracking betrieben. Serverseitig werden jedoch in Logs personenbezogene Daten (z.B. die IP Adresse) gespeichert zwecks Fehleranalyse
 Es werden Daten (IP-Adresse) an folgende Dienste übergeben:
 openstreetmap.org"/>
@@ -116,13 +117,17 @@ openstreetmap.org"/>
 
 
 
+
+
+
+
+
     
 
     
         
         
         
-        
     
 
     
@@ -134,7 +139,8 @@ openstreetmap.org"/>
     
 
 
-<link  crossorigin="anonymous"  href="/css/paige/bootstrap/370ad5bdcb602baa80412d8e9cd6e25f3b158a68-paige.min.cdb664091a7aa4c9be9ef945e2a8a915c85ed6a4aa42ff63aefcb73acaa2090c.css"  integrity="sha256-zbZkCRp6pMm&#43;nvlF4qipFche1qSqQv9jrvy3OsqiCQw="   referrerpolicy="no-referrer"  rel="stylesheet">
+<link  crossorigin="anonymous"  href="/css/paige/bootstrap/6186ad141d391e4c0c10d2e9cb4eaeaadf75e809-paige.min.b1eb2bae2f7e0e6660a78116556654a80f574c42906a83296d0b10f629680eb0.css"  integrity="sha256-sesrri9&#43;DmZgp4EWVWZUqA9XTEKQaoMpbQsQ9iloDrA="   referrerpolicy="no-referrer"  rel="stylesheet">
+
 
 
 
@@ -250,10 +256,6 @@ body, html {
     min-width: 550px;
 }
 
-#paige-content {
-    counter-reset: paige-figure;
-}
-
 #paige-content blockquote {
     padding: 0.5rem 1rem;
     border-left: 0.25rem solid var(--bs-border-color);
@@ -263,6 +265,9 @@ body, html {
 #paige-content blockquote > p:last-of-type {
     margin-bottom: 0;
 }
+
+
+
 
 @media (prefers-color-scheme: dark) {
     /* Background */ .bg { color: #c9d1d9; background-color: var(--bs-body-bg); }
@@ -444,6 +449,7 @@ body, html {
 
 }
 
+
 @media (prefers-reduced-motion: reduce) {
     .paige-header-link {
         transition: none;
@@ -482,9 +488,11 @@ body, html {
 
 </style>
 
-
+    <link href="/lightbox/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="fancybox/fancybox.css" />
     
 </head>
+
 
     <body class="d-flex flex-column">
 
@@ -504,6 +512,12 @@ body, html {
 
 
 
+        
+
+
+
+
+
 
 
 
@@ -518,7 +532,7 @@ body, html {
 
 
     <nav>
-        <ul class="align-items-center justify-content-center nav  nav-pills ">
+        <ul class="align-items-center justify-content-center nav ">
             
                 
                 
@@ -527,7 +541,7 @@ body, html {
                 
 
                 <li class="nav-item ">
-                    <a   class="  nav-link "  href="/"    >Home</a>
+                    <a   class="  nav-link   text-decoration-underline "  href="/"    >Home</a>
 
                     
                 </li>
@@ -539,7 +553,7 @@ body, html {
                 
 
                 <li class="nav-item ">
-                    <a   class="  nav-link "  href="/impressionen"    >Impressionen</a>
+                    <a   class="  nav-link   text-decoration-underline "  href="/impressionen"    >Impressionen</a>
 
                     
                 </li>
@@ -551,7 +565,7 @@ body, html {
                 
 
                 <li class="nav-item ">
-                    <a   class="  nav-link "  href="/geschichte"    >Geschichte</a>
+                    <a   class="  nav-link   text-decoration-underline "  href="/geschichte"    >Geschichte</a>
 
                     
                 </li>
@@ -563,7 +577,7 @@ body, html {
                 
 
                 <li class="nav-item ">
-                    <a   class="  nav-link "  href="/verein"    >Verein</a>
+                    <a   class="  nav-link   text-decoration-underline "  href="/verein"    >Verein</a>
 
                     
                 </li>
@@ -575,7 +589,7 @@ body, html {
                 
 
                 <li class="nav-item ">
-                    <a  aria-current="page"   class=" active   nav-link "  href="/impressum"    >Impressum</a>
+                    <a  aria-current="page"   class=" active  text-body-emphasis    nav-link   text-decoration-underline "  href="/impressum"    >Impressum</a>
 
                     
                 </li>
@@ -591,6 +605,14 @@ body, html {
         <div class="d-flex justify-content-center">
             <ol class="breadcrumb mb-0">
                 
+
+                
+
+                
+                    
+
+                    
+
                     <li class="breadcrumb-item"><a href="/">Usinger Spielerei</a></li>
                 
             </ol>
@@ -654,9 +676,7 @@ body, html {
 
 
 
-
-
-<div id="paige-metadata">
+<div class="mw-100" id="paige-metadata">
     
         <h1 class="fw-bold text-center" id="paige-title">Impressum/Datenschutz</h1>
     
@@ -664,9 +684,9 @@ body, html {
     
 
     
-
-    
         <div class="mb-3">
+            
+
             
 
             
@@ -687,11 +707,10 @@ body, html {
         
 
 
-    <div id="paige-toc">
+    <div class="mw-100" id="paige-toc">
         <div class="border mb-3 pe-3 ps-3 pt-3 rounded">
             <nav id="TableOfContents">
   <ul>
-    <li><a href="#impressum">Impressum</a></li>
     <li><a href="#datenschutz">Datenschutz</a></li>
   </ul>
 </nav>
@@ -704,11 +723,145 @@ body, html {
 
 
 
-    <div class="mw-100 overflow-x-auto" id="paige-content"><h2 id="impressum">Impressum <a aria-label="Verweise auf diesen Abschnitt" class="paige-header-link text-decoration-none" href="#impressum">#</a></h2>
-<p>Andreas Siebel |
+    <div class="mw-100" id="paige-content"><p>Andreas Siebel |
 Auf der Schießmauer 5 |
 61250 Usingen |</p>
-<p>Kontakt: <a href="mailto:andreas.siebel@it-teaching.de">andreas.siebel@it-teaching.de</a></p>
+<p>Kontakt: <a href="mailto:vorstand@usinger-spielerei.de">vorstand@usinger-spielerei.de</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="paige-gallery">
+
+<div class="align-items-start column-gap-3 d-flex flex-wrap justify-content-center row-gap-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+<span class="paige-image">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img      referrerpolicy="no-referrer"  src="http://usinger-spielerei.de/images/game7.jpg"   style="height: 20rem; width: auto"   ></span>
+
+</div>
+
+</div>
+
 <h2 id="datenschutz">Datenschutz <a aria-label="Verweise auf diesen Abschnitt" class="paige-header-link text-decoration-none" href="#datenschutz">#</a></h2>
 <p>Auf der Seite wird kein Nutzertracking betrieben. Serverseitig werden jedoch in Logs personenbezogene Daten (z.B. die IP Adresse) gespeichert zwecks Fehleranalyse</p>
 <p>Es werden Daten (IP-Adresse) an folgende Dienste übergeben:</p>
@@ -723,10 +876,6 @@ Auf der Schießmauer 5 |
 
 
     
-    
-
-
-
     
 
 
@@ -780,7 +929,28 @@ Auf der Schießmauer 5 |
 
 
 
+    
+
+    
+
+
 <footer class="mb-3" id="paige-footer">
+    
+
+    
+        <div class="mb-3" id="paige-prev-next">
+            
+                <p class="mb-0 text-center text-secondary" id="paige-prev">
+                    <a class="link-secondary" href="http://usinger-spielerei.de/verein/">&larr; Usinger Spielerei - Der Verein</a>
+                </p>
+            
+
+            
+                <p class="mb-0 text-center text-secondary" id="paige-next">
+                    <a class="link-secondary" href="http://usinger-spielerei.de/impressionen/">Impressionen &rarr;</a>
+                </p>
+            
+        </div>
     
 
     
@@ -798,7 +968,10 @@ Auf der Schießmauer 5 |
             </div>
         </div>
 
-        
+        <noscript>JavaScript wird benötigt.</noscript>
+<script src="/lightbox/js/lightbox-plus-jquery.min.js"></script>
+<script src="/fancybox/fancybox.umd.js"></script>
+
 
 
 
@@ -819,7 +992,7 @@ Auf der Schießmauer 5 |
     
 
 
-<script  crossorigin="anonymous"   defer  integrity="sha256-RSfEY&#43;uak2KAJPQO&#43;oAdwv&#43;5&#43;HTHI4DftOCBLl4gR5Q="   referrerpolicy="no-referrer"  src="/js/paige/bootstrap/bootstrap.bundle.min.4527c463eb9a93628024f40efa801dc2ffb9f874c72380dfb4e0812e5e204794.js" ></script>
+<script  crossorigin="anonymous"   defer  integrity="sha256-4HHghGWaXnsiumBAR6K1cAPZLZrCGtZz6MGh7vCnBvA="   referrerpolicy="no-referrer"  src="/js/paige/bootstrap/bootstrap.bundle.min.e071e084659a5e7b22ba604047a2b57003d92d9ac21ad673e8c1a1eef0a706f0.js" ></script>
 
 
 
@@ -890,7 +1063,6 @@ Auf der Schießmauer 5 |
 
 
 <noscript>JavaScript wird benötigt.</noscript>
-
 
         
     </body>

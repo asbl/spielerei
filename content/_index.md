@@ -29,7 +29,9 @@ paige:
     #paige-content {
       width: 66ch;
     }
+  alert: "Taunus spielt! - Der Brettspieltag in Usingen war ein voller Erfolg. Danke an alle Beteiligten!"
 title: "Usinger Spielerei"
+  
 ---
 
 {{< paige/gallery align="start" >}}
@@ -42,7 +44,13 @@ Spiele mit uns Brettspiele an jedem zweiten Montag im Monat im ev. Gemeindehaus 
 
 ## Nächste Termine
 
- 11.März 2024 - 17:00 - 22:00 Uhr
+<div style="text-align:left">
+<ul>
+<li> Usinger Spielerei: Montag, 11. November im ev. Gemeindehaus</li>
+<li> Usinger Spielerei: Montag, 09. Dezember im ev. Gemeindehaus</li>
+</ul>
+</div>
+<b>Zeit</b>: Immer von 17:00 - 22:00 Uhr
 
 ---
 
@@ -64,7 +72,7 @@ Unser Leidenschaft äußert sich im **Testen, Ausprobieren und Neuentdecken von 
 
 Es stehen bei jedem Treffen einige Gesellschaftsspiele zum Ausprobieren bereit. 
 
-Du kannst auch gerne eigene Spiele mitbringen. Oder du suchst dir eines aus unserer Spieleliste aus, gibst uns Bescheid, und wir stellen es bei einem der nächsten Treffen zur Verfügung. Also keine Sorge, wenn du selber keine Spiele zum Mitbringen hast. Gespielt werden kann auf jeden Fall, natürlich auch an mehreren Spieltischen parallel.
+Du kannst auch gerne eigene Spiele mitbringen. Oder du fragst nach einem Spiel und wenn dies ein Mitglied besitzt stellen es bei einem der nächsten Treffen zur Verfügung. Also keine Sorge, wenn du selber keine Spiele zum Mitbringen hast. Gespielt werden kann auf jeden Fall, natürlich auch an mehreren Spieltischen parallel.
 
 Die Spielerei findet jeden zweiten Montag des Monats von 17:00-22:00 Uhr im Gemeindehaus der evangelischen Gemeinde in Usingen statt.
 
@@ -78,6 +86,6 @@ Die Spielerei findet jeden zweiten Montag des Monats von 17:00-22:00 Uhr im Geme
 
 ## Social Media
 
-Discord: Wir organisieren uns über einen Discord-Kanal. - [Komm herein](https://discord.gg/GZbdbqv2)
+Discord: Wir organisieren uns über einen Discord-Kanal. - [Komm herein](https://discord.gg/fQzCzA2qPP)
 
 Außerdem findest du uns auf [Instagram](https://www.instagram.com/usinger_spielerei/)

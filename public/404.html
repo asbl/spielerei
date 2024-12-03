@@ -6,7 +6,8 @@
 
 
 
-<html data-paige="Paige theme from https://github.com/willfaught/paige"   lang="de" >
+
+<html  data-paige="Paige theme from https://github.com/willfaught/paige"   lang="de" >
 
     
 
@@ -106,13 +107,17 @@
 
 
 
+
+
+
+
+
     
 
     
         
         
         
-        
     
 
     
@@ -124,7 +129,8 @@
     
 
 
-<link  crossorigin="anonymous"  href="/css/paige/bootstrap/370ad5bdcb602baa80412d8e9cd6e25f3b158a68-paige.min.cdb664091a7aa4c9be9ef945e2a8a915c85ed6a4aa42ff63aefcb73acaa2090c.css"  integrity="sha256-zbZkCRp6pMm&#43;nvlF4qipFche1qSqQv9jrvy3OsqiCQw="   referrerpolicy="no-referrer"  rel="stylesheet">
+<link  crossorigin="anonymous"  href="/css/paige/bootstrap/6186ad141d391e4c0c10d2e9cb4eaeaadf75e809-paige.min.b1eb2bae2f7e0e6660a78116556654a80f574c42906a83296d0b10f629680eb0.css"  integrity="sha256-sesrri9&#43;DmZgp4EWVWZUqA9XTEKQaoMpbQsQ9iloDrA="   referrerpolicy="no-referrer"  rel="stylesheet">
+
 
 
 
@@ -240,10 +246,6 @@ body, html {
     min-width: 550px;
 }
 
-#paige-content {
-    counter-reset: paige-figure;
-}
-
 #paige-content blockquote {
     padding: 0.5rem 1rem;
     border-left: 0.25rem solid var(--bs-border-color);
@@ -253,6 +255,9 @@ body, html {
 #paige-content blockquote > p:last-of-type {
     margin-bottom: 0;
 }
+
+
+
 
 @media (prefers-color-scheme: dark) {
     /* Background */ .bg { color: #c9d1d9; background-color: var(--bs-body-bg); }
@@ -434,6 +439,7 @@ body, html {
 
 }
 
+
 @media (prefers-reduced-motion: reduce) {
     .paige-header-link {
         transition: none;
@@ -445,9 +451,11 @@ body, html {
 
 </style>
 
-
+    <link href="/lightbox/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="fancybox/fancybox.css" />
     
 </head>
+
 
     <body class="d-flex flex-column">
 
@@ -467,6 +475,12 @@ body, html {
 
 
 
+        
+
+
+
+
+
 
 
 
@@ -481,7 +495,7 @@ body, html {
 
 
     <nav>
-        <ul class="align-items-center justify-content-center nav  nav-pills ">
+        <ul class="align-items-center justify-content-center nav ">
             
                 
                 
@@ -490,7 +504,7 @@ body, html {
                 
 
                 <li class="nav-item ">
-                    <a   class="  nav-link "  href="/"    >Home</a>
+                    <a   class="  nav-link   text-decoration-underline "  href="/"    >Home</a>
 
                     
                 </li>
@@ -502,7 +516,7 @@ body, html {
                 
 
                 <li class="nav-item ">
-                    <a   class="  nav-link "  href="/impressionen"    >Impressionen</a>
+                    <a   class="  nav-link   text-decoration-underline "  href="/impressionen"    >Impressionen</a>
 
                     
                 </li>
@@ -514,7 +528,7 @@ body, html {
                 
 
                 <li class="nav-item ">
-                    <a   class="  nav-link "  href="/geschichte"    >Geschichte</a>
+                    <a   class="  nav-link   text-decoration-underline "  href="/geschichte"    >Geschichte</a>
 
                     
                 </li>
@@ -526,7 +540,7 @@ body, html {
                 
 
                 <li class="nav-item ">
-                    <a   class="  nav-link "  href="/verein"    >Verein</a>
+                    <a   class="  nav-link   text-decoration-underline "  href="/verein"    >Verein</a>
 
                     
                 </li>
@@ -538,7 +552,7 @@ body, html {
                 
 
                 <li class="nav-item ">
-                    <a   class="  nav-link "  href="/impressum"    >Impressum</a>
+                    <a   class="  nav-link   text-decoration-underline "  href="/impressum"    >Impressum</a>
 
                     
                 </li>
@@ -554,6 +568,14 @@ body, html {
         <div class="d-flex justify-content-center">
             <ol class="breadcrumb mb-0">
                 
+
+                
+
+                
+                    
+
+                    
+
                     <li class="breadcrumb-item"><a href="/">Usinger Spielerei</a></li>
                 
             </ol>
@@ -587,7 +609,10 @@ body, html {
 
 
 
+
 <footer class="mb-3" id="paige-footer">
+    
+
     
 
     
@@ -605,7 +630,10 @@ body, html {
             </div>
         </div>
 
-        
+        <noscript>JavaScript wird benötigt.</noscript>
+<script src="/lightbox/js/lightbox-plus-jquery.min.js"></script>
+<script src="/fancybox/fancybox.umd.js"></script>
+
 
 
 
@@ -626,7 +654,7 @@ body, html {
     
 
 
-<script  crossorigin="anonymous"   defer  integrity="sha256-RSfEY&#43;uak2KAJPQO&#43;oAdwv&#43;5&#43;HTHI4DftOCBLl4gR5Q="   referrerpolicy="no-referrer"  src="/js/paige/bootstrap/bootstrap.bundle.min.4527c463eb9a93628024f40efa801dc2ffb9f874c72380dfb4e0812e5e204794.js" ></script>
+<script  crossorigin="anonymous"   defer  integrity="sha256-4HHghGWaXnsiumBAR6K1cAPZLZrCGtZz6MGh7vCnBvA="   referrerpolicy="no-referrer"  src="/js/paige/bootstrap/bootstrap.bundle.min.e071e084659a5e7b22ba604047a2b57003d92d9ac21ad673e8c1a1eef0a706f0.js" ></script>
 
 
 
@@ -697,7 +725,6 @@ body, html {
 
 
 <noscript>JavaScript wird benötigt.</noscript>
-
 
         
     </body>

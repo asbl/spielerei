@@ -31,8 +31,12 @@ paige:
 title: "Usinger Spielerei - Der Verein"
 ---
 
-Am 25.02.2024 wurde ein Verein gegründet. Unser Ziel ist es, diesen eintragen zu lassen und als gemeinnütziger Verein tätig zu sein.
+Am 25.02.2024 wurde ein Verein gegründet. 
+Am 08.10.2025 wurde der Verein ins Vereinsregister eingetragen.
 
+{{< paige/gallery align="start" >}}
+{{< paige/image height="20rem" src="/images/game9.jpg" >}}
+{{< /paige/gallery >}}
 
 ---
 

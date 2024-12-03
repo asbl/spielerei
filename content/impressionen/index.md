@@ -31,6 +31,14 @@ paige:
 title: "Impressionen"
 ---
 
+
+
+### Spielerei 11.03.2024
+
+Mit etwas Retro-Flair... 
+
+{{< paige/gallery class="rounded-5" images="spielerei-240311/*" process="300x center resize lanczos picture  webp" linked="unprocessed" type="rows" maxheight="10rem" />}}
+
 ### Spielewochenende 2024
 
 {{< paige/gallery class="rounded-5" images="spielewochenende24/*" process="300x center resize lanczos picture  webp" linked="unprocessed" type="rows" maxheight="10rem" />}}
