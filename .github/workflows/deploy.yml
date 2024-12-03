@@ -1,0 +1,30 @@
+name: Deploy Hugo Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Hugo
+        run: |
+          sudo apt-get update
+          sudo apt-get install hugo
+
+      - name: Build Hugo site
+        run: |
+          hugo
+
+      - name: Deploy to Webspace
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_KEY }}
+        run: |
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          rsync -avz --delete public/ benutzername@dein-webspace.de:/path/to/your/website
