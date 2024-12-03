@@ -17,8 +17,12 @@ jobs:
           sudo apt-get update
           sudo apt-get install hugo
 
-      - name: Install Hugo Modules
-        run: hugo mod get
+      - name: Update Hugo Modules
+        run: hugo mod get -u
+
+      - name: Install Node.js Dependencies
+        run: npm install
+
 
       - name: Build Hugo site
         run: |
