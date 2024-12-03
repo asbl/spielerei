@@ -13,10 +13,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-    - name: Install Go
-      uses: actions/setup-go@v4
-      with:
-        go-version: 'latest' # Du kannst die neueste Go-Version verwenden
+      - name: Install Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: 'latest' 
 
       - name: Install Dart Sass
         run: sudo snap install dart-sass
