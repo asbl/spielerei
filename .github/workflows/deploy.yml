@@ -13,6 +13,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+    - name: Install Dart Sass
+      run: sudo snap install dart-sass
+
       # 2. Setup Hugo mit dem Actions-Modul
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
