@@ -7,11 +7,10 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
+    container:
+      image: ubuntu:22.04
     steps:
-      - name: Install Required Tools
-        run: apt-get update && apt-get install -y tar gzip
-
       # 1. Repository auschecken
       - name: Checkout repository
         uses: actions/checkout@v3
