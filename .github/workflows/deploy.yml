@@ -53,6 +53,7 @@ jobs:
       - name: Deploy to Webspace
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_KEY }}
+          SSH_PASSWORD: ${{ secrets.SSH_KEY }}
           SERVER_PORT: ${{ secrets.PORT }}
           SERVER_USER: ${{ secrets.USER }}
           SERVER_HOST: ${{ secrets.SERVER_NAME }}
