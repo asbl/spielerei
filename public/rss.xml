@@ -1,122 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    
-        
-    
-
-    
-
-    
-        
-    
-
-    
-
-    
-        
-    
-
-    
-
-    
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"  xml:lang="de"  xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        
-            
-
-            
-                
-            
-
-            
-                <link href="http://localhost:1313/" rel="self" type="text/html"/>
-            
-        
-            
-
-            
-
-            
-                <link href="http://localhost:1313/rss.xml" rel="alternate" type="application/rss+xml"/>
-            
-        
-
-        
-
-        
-
-        <description>Brettspielen in Usingen</description>
-
-        
-            <language>de</language>
-        
-
-        
-
-        <link>http://localhost:1313/</link>
-
-        
-
-        <title>Usinger Spielerei</title>
-
-        
-
-        
-            <item>
-                
-                
-                
-                
-                
-                
-                
-
-                
-
-                
-
-                
-
-                
-
-                
-                
-
-                
-
-                
-
-                
-                    <description><![CDATA[<p>Am 25.02.2024 wurde ein Verein gegründet.
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xml:lang="de" xmlns:atom="http://www.w3.org/2005/Atom"><channel><link href="http://usinger-spielerei.de/" rel="self" type="text/html"/><link href="http://usinger-spielerei.de/rss.xml" rel="alternate" type="application/rss+xml"/><description>Brettspielen in Usingen</description><language>de</language><link>http://usinger-spielerei.de/</link><title>Usinger Spielerei</title><item><description><![CDATA[<p>Am 25.02.2024 wurde ein Verein gegründet.
 Am 08.10.2025 wurde der Verein ins Vereinsregister eingetragen.</p>
 
 
@@ -248,7 +130,7 @@ Am 08.10.2025 wurde der Verein ins Vereinsregister eingetragen.</p>
 
 
 
-<img   class="img-fluid "     referrerpolicy="no-referrer"  src="http://localhost:1313/images/game9.jpg"   style="height: 20rem; width: auto"   ></span>
+<img   class="img-fluid "     referrerpolicy="no-referrer"  src="http://usinger-spielerei.de/images/game9.jpg"   style="height: 20rem; width: auto"   ></span>
 
 </div>
 
@@ -262,50 +144,7 @@ Am 08.10.2025 wurde der Verein ins Vereinsregister eingetragen.</p>
 <p>5€ pro Jahr Kinder</p>
 <hr>
 <p><a href="satzung.pdf">Satzung</a></p>
-]]></description>
-                
-
-                <guid isPermaLink="false">tag:localhost:1313,0001-01-01:/verein/</guid>
-
-                
-                    <link>http://localhost:1313/verein/</link>
-                
-
-                
-                    <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
-                
-
-                
-                    <title>Usinger Spielerei - Der Verein</title>
-                
-            </item>
-        
-            <item>
-                
-                
-                
-                
-                
-                
-                
-
-                
-
-                
-
-                
-
-                
-
-                
-                
-
-                
-
-                
-
-                
-                    <description><![CDATA[<p>Andreas Siebel |
+]]></description><guid isPermaLink="false">tag:usinger-spielerei.de,0001-01-01:/verein/</guid><link>http://usinger-spielerei.de/verein/</link><pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate><title>Usinger Spielerei - Der Verein</title></item><item><description><![CDATA[<p>Andreas Siebel |
 Auf der Schießmauer 5 |
 61250 Usingen |</p>
 <p>Kontakt: <a href="mailto:vorstand@usinger-spielerei.de">vorstand@usinger-spielerei.de</a></p>
@@ -439,7 +278,7 @@ Auf der Schießmauer 5 |
 
 
 
-<img   class="img-fluid "     referrerpolicy="no-referrer"  src="http://localhost:1313/images/game7.jpg"   style="height: 20rem; width: auto"   ></span>
+<img   class="img-fluid "     referrerpolicy="no-referrer"  src="http://usinger-spielerei.de/images/game7.jpg"   style="height: 20rem; width: auto"   ></span>
 
 </div>
 
@@ -451,50 +290,7 @@ Auf der Schießmauer 5 |
 <p>Auf der Seite wird kein Nutzertracking betrieben. Serverseitig werden jedoch in Logs personenbezogene Daten (z.B. die IP Adresse) gespeichert zwecks Fehleranalyse</p>
 <p>Es werden Daten (IP-Adresse) an folgende Dienste übergeben:</p>
 <p>openstreetmap.org</p>
-]]></description>
-                
-
-                <guid isPermaLink="false">tag:localhost:1313,0001-01-01:/impressum/</guid>
-
-                
-                    <link>http://localhost:1313/impressum/</link>
-                
-
-                
-                    <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
-                
-
-                
-                    <title>Impressum/Datenschutz</title>
-                
-            </item>
-        
-            <item>
-                
-                
-                
-                
-                
-                
-                
-
-                
-
-                
-
-                
-
-                
-
-                
-                
-
-                
-
-                
-
-                
-                    <description><![CDATA[<h3 id="spielerei-11032024">Spielerei 11.03.2024</h3>
+]]></description><guid isPermaLink="false">tag:usinger-spielerei.de,0001-01-01:/impressum/</guid><link>http://usinger-spielerei.de/impressum/</link><pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate><title>Impressum/Datenschutz</title></item><item><description><![CDATA[<h3 id="spielerei-11032024">Spielerei 11.03.2024</h3>
 <p>Mit etwas Retro-Flair&hellip;</p>
 
 
@@ -731,7 +527,7 @@ Auf der Schießmauer 5 |
 
 
 
-<img   class="img-fluid rounded-5"    height="157"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/1_hu11152870032242661507.5094d05703befcaa6ddd8b6002339f092d411c958452d3c1b39158846419e395.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="157"   referrerpolicy="no-referrer"  src="http://usinger-spielerei.de/impressionen/spielerei-240311/1_hu11152870032242661507.5094d05703befcaa6ddd8b6002339f092d411c958452d3c1b39158846419e395.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -934,7 +730,7 @@ Auf der Schießmauer 5 |
 
 
 
-<img   class="img-fluid rounded-5"    height="225"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/2_hu14056756304418162420.4ae3fbc0e4f78f8db72bca3f8d8375b93e31ecbdacb8d94be8687800982b1fd4.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="225"   referrerpolicy="no-referrer"  src="http://usinger-spielerei.de/impressionen/spielerei-240311/2_hu14056756304418162420.4ae3fbc0e4f78f8db72bca3f8d8375b93e31ecbdacb8d94be8687800982b1fd4.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -1137,7 +933,7 @@ Auf der Schießmauer 5 |
 
 
 
-<img   class="img-fluid rounded-5"    height="400"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/3_hu508167874983541852.5b9b93c6dd0ad15250a872d4364e881f9bbe1f829206c54becb1410eff9e552b.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="400"   referrerpolicy="no-referrer"  src="http://usinger-spielerei.de/impressionen/spielerei-240311/3_hu508167874983541852.5b9b93c6dd0ad15250a872d4364e881f9bbe1f829206c54becb1410eff9e552b.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -1340,7 +1136,7 @@ Auf der Schießmauer 5 |
 
 
 
-<img   class="img-fluid rounded-5"    height="486"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/4_hu3957094015926535011.fffa48d323377ce1da222b93a04054e172d6e213303cedc3712704979ded380b.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="486"   referrerpolicy="no-referrer"  src="http://usinger-spielerei.de/impressionen/spielerei-240311/4_hu3957094015926535011.fffa48d323377ce1da222b93a04054e172d6e213303cedc3712704979ded380b.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -1543,7 +1339,7 @@ Auf der Schießmauer 5 |
 
 
 
-<img   class="img-fluid rounded-5"    height="400"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/5_hu10927551315755266359.1bc4d31298d74e0b919c0169ad131251ae252732c09daab0d298f34267b41b59.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="400"   referrerpolicy="no-referrer"  src="http://usinger-spielerei.de/impressionen/spielerei-240311/5_hu10927551315755266359.1bc4d31298d74e0b919c0169ad131251ae252732c09daab0d298f34267b41b59.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -1746,7 +1542,7 @@ Auf der Schießmauer 5 |
 
 
 
-<img   class="img-fluid rounded-5"    height="400"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/6_hu7621373650200129010.3efd9927800a16eab401e1c677c94a44fc78f204734ba6b85acbe071b8a69b0b.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="400"   referrerpolicy="no-referrer"  src="http://usinger-spielerei.de/impressionen/spielerei-240311/6_hu7621373650200129010.3efd9927800a16eab401e1c677c94a44fc78f204734ba6b85acbe071b8a69b0b.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -1993,7 +1789,7 @@ Auf der Schießmauer 5 |
 
 
 
-<img   class="img-fluid rounded-5"    height="225"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/3_hu2903208842332245270.f0e6ac42eafce36b05c05777c58f521dc5b37c781953aab0bc1f277dc8761f73.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="225"   referrerpolicy="no-referrer"  src="http://usinger-spielerei.de/impressionen/spielewochenende24/3_hu2903208842332245270.f0e6ac42eafce36b05c05777c58f521dc5b37c781953aab0bc1f277dc8761f73.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -2196,7 +1992,7 @@ Auf der Schießmauer 5 |
 
 
 
-<img   class="img-fluid rounded-5"    height="209"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/4_hu12267406360567846990.67812221a7460679dafbde85ea37e3d22036e19b1cde8b9b31e923e0368c8859.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="209"   referrerpolicy="no-referrer"  src="http://usinger-spielerei.de/impressionen/spielewochenende24/4_hu12267406360567846990.67812221a7460679dafbde85ea37e3d22036e19b1cde8b9b31e923e0368c8859.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -2399,7 +2195,7 @@ Auf der Schießmauer 5 |
 
 
 
-<img   class="img-fluid rounded-5"    height="306"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/5_hu354310587222106827.d3c85e4d982201796bf8dd1553361f6a811148fa892cf5e2207481dd1eae036a.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="306"   referrerpolicy="no-referrer"  src="http://usinger-spielerei.de/impressionen/spielewochenende24/5_hu354310587222106827.d3c85e4d982201796bf8dd1553361f6a811148fa892cf5e2207481dd1eae036a.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -2602,7 +2398,7 @@ Auf der Schießmauer 5 |
 
 
 
-<img   class="img-fluid rounded-5"    height="225"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/spielewochenende1_hu14688440374059112148.2ebc85ea60f93812869c86f71d7bba740f3beb43068540159e696178572762c7.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="225"   referrerpolicy="no-referrer"  src="http://usinger-spielerei.de/impressionen/spielewochenende24/spielewochenende1_hu14688440374059112148.2ebc85ea60f93812869c86f71d7bba740f3beb43068540159e696178572762c7.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -2805,7 +2601,7 @@ Auf der Schießmauer 5 |
 
 
 
-<img   class="img-fluid rounded-5"    height="546"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/spielewochenende2_hu15890190076592634814.24681728e0dfab0651f8317906474702f24e470c5549f9c4cd25549637d2c7d8.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="546"   referrerpolicy="no-referrer"  src="http://usinger-spielerei.de/impressionen/spielewochenende24/spielewochenende2_hu15890190076592634814.24681728e0dfab0651f8317906474702f24e470c5549f9c4cd25549637d2c7d8.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -3008,7 +2804,7 @@ Auf der Schießmauer 5 |
 
 
 
-<img   class="img-fluid rounded-5"    height="190"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/trolle-und-prinzessinen_hu16699796965089812572.09cb82c0c0cd418bdc67159fc0ef0ba47a2099003cc586ac3d7bd1a9990b8fde.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="190"   referrerpolicy="no-referrer"  src="http://usinger-spielerei.de/impressionen/spielewochenende24/trolle-und-prinzessinen_hu16699796965089812572.09cb82c0c0cd418bdc67159fc0ef0ba47a2099003cc586ac3d7bd1a9990b8fde.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -3019,50 +2815,7 @@ Auf der Schießmauer 5 |
 
 </div>
 
-]]></description>
-                
-
-                <guid isPermaLink="false">tag:localhost:1313,0001-01-01:/impressionen/</guid>
-
-                
-                    <link>http://localhost:1313/impressionen/</link>
-                
-
-                
-                    <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
-                
-
-                
-                    <title>Impressionen</title>
-                
-            </item>
-        
-            <item>
-                
-                
-                
-                
-                
-                
-                
-
-                
-
-                
-
-                
-
-                
-
-                
-                
-
-                
-
-                
-
-                
-                    <description><![CDATA[<script src="/timeline/js/timeline.min.js"></script>
+]]></description><guid isPermaLink="false">tag:usinger-spielerei.de,0001-01-01:/impressionen/</guid><link>http://usinger-spielerei.de/impressionen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate><title>Impressionen</title></item><item><description><![CDATA[<script src="/timeline/js/timeline.min.js"></script>
 <link href="/timeline/css/timeline.min.css" rel="stylesheet" />
 
 <div class="timeline">
@@ -3120,23 +2873,4 @@ Auf der Schießmauer 5 |
         </div>
     </div>
 </div>
-]]></description>
-                
-
-                <guid isPermaLink="false">tag:localhost:1313,0001-01-01:/geschichte/</guid>
-
-                
-                    <link>http://localhost:1313/geschichte/</link>
-                
-
-                
-                    <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
-                
-
-                
-                    <title>Geschichte</title>
-                
-            </item>
-        
-    </channel>
-</rss>
+]]></description><guid isPermaLink="false">tag:usinger-spielerei.de,0001-01-01:/geschichte/</guid><link>http://usinger-spielerei.de/geschichte/</link><pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate><title>Geschichte</title></item></channel></rss>
