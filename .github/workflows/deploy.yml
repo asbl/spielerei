@@ -23,9 +23,6 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Clear Hugo Module Cache
-        run: rm -rf $HOME/.cache/hugo
-      
       # 3. Update Hugo Modules
       - name: Update Hugo Modules
         run: hugo mod get -u
