@@ -24,6 +24,10 @@ jobs:
       - name: Update Hugo Modules
         run: hugo mod get -u
 
+      # 3. Get paige
+      - name: Update Hugo Modules
+        run: hugo mod get -u github.com/willfaught/paige/
+
       # 4. Debugging: Prüfe Dateien
       - name: Debug Shortcode Files
         run: find layouts/shortcodes -type f
