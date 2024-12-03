@@ -38,11 +38,6 @@ jobs:
       - name: Vendor Hugo Modules
         run: hugo mod vendor
 
-      # 8. Compile SCSS (optional)
-      - name: Compile SCSS
-        run: sass assets/css/paige/bootstrap/paige.scss:static/css/paige.css
-      
-
       - name: List all files
         run: find . -type f
 
