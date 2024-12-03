@@ -18,11 +18,6 @@
 
 
 
-
-
-
-
-
     
 
 
@@ -33,18 +28,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"  xml:lang="de"  xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <atom:link href="http://localhost:1313/tags/rss.xml" rel="self" type="application/rss+xml"/>
+        
+            
+
+            
+                
+            
+
+            
+                <link href="http://localhost:1313/tags/" rel="self" type="text/html"/>
+            
+        
+            
+
+            
+
+            
+                <link href="http://localhost:1313/tags/rss.xml" rel="alternate" type="application/rss+xml"/>
+            
+        
 
         
 
-        <description>Recent content</description>
+        
+
+        <description>Neueste Inhalte</description>
 
         
             <language>de</language>
         
 
-        
-            <lastBuildDate>Mon, 01 Jan 0001 00:00:00 UTC</lastBuildDate>
         
 
         <link>http://localhost:1313/tags/</link>

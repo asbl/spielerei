@@ -14,6 +14,16 @@
 
 
 
+
+
+
+
+
+
+    
+
+    
+
     
 
 
@@ -38,6 +48,7 @@
     <meta content="/browserconfig.xml" name="msapplication-config">
 
 
+<meta content="https://github.com/willfaught/paige" name="theme">
 <meta content="#0d6efd" name="theme-color">
 <meta content="width=device-width, initial-scale=1" name="viewport">
 
@@ -134,7 +145,7 @@ Spielewochenende 2024">
     
 
 
-<link  crossorigin="anonymous"  href="/css/paige/bootstrap/6186ad141d391e4c0c10d2e9cb4eaeaadf75e809-paige.min.44073eecf313643dc42bcc5cf7271a0c640dbc809615e487f4687c068a5fe7ea.css"  integrity="sha256-RAc&#43;7PMTZD3EK8xc9ycaDGQNvICWFeSH9Gh8Bopf5&#43;o="   referrerpolicy="no-referrer"  rel="stylesheet">
+<link  crossorigin="anonymous"  href="/css/paige/bootstrap/6186ad141d391e4c0c10d2e9cb4eaeaadf75e809-paige.min.3cce59baa4c0a377a71878f54d31de5b98388de7f970c7988c276bcf39500c5f.css"  integrity="sha256-PM5ZuqTAo3enGHj1TTHeW5g4jef5cMeYjCdrzzlQDF8="   referrerpolicy="no-referrer"  rel="stylesheet">
 
 
 
@@ -177,95 +188,93 @@ Spielewochenende 2024">
 <style>
 
 
-body, html {
-    height: 100%;
+.paige-figure-numbered {
+    counter-increment: paige-figure-numbered;
 }
 
-.highlight .chroma .hl, .highlight .chroma .lnt {
-    display: flex;
+.paige-figure-numbered > div > figure > figcaption::before {
+    content: "Abbildung " counter(paige-figure-numbered) ": ";
 }
 
-.paige-figure {
-    margin-bottom: 1rem;
-}
-
-.paige-figure > figure > div > :last-child {
-    margin-bottom: 0;
-}
-
-.paige-figure .highlight .chroma pre, .paige-figure .highlight pre.chroma {
-    margin-bottom: 0;
-}
-
-.paige-figure .paige-image {
-    margin-bottom: 0;
-}
-
-.paige-figure .paige-quote > blockquote {
-    margin-bottom: 0;
-}
-
-.paige-figure .paige-video {
-    margin-bottom: 0;
-}
-
-.paige-figure.paige-figure-numbered {
-    counter-increment: paige-figure;
-}
-
-.paige-figure.paige-figure-numbered figcaption:empty::before {
-    content: "Abbildung " counter(paige-figure);
-}
-
-.paige-figure.paige-figure-numbered figcaption::before {
-    content: "Abbildung " counter(paige-figure) ": ";
-}
-
-.paige-gallery {
-    margin-bottom: 1rem;
-}
-
-.paige-gallery .paige-figure {
-    margin-bottom: 0;
-}
-
-.paige-gallery .paige-image {
-    margin-bottom: 0;
+.paige-figure-numbered > div > figure > figcaption:empty::before {
+    content: "Abbildung " counter(paige-figure-numbered);
 }
 
 .paige-header-link {
     opacity: 0;
+    margin-left: 0.5rem;
+    position: absolute;
     transition: color 0.15s ease-in-out, opacity 0.15s ease-in-out;
 }
 
-.paige-header-link:focus, .paige-header-link:hover, :hover > .paige-header-link, :target > .paige-header-link {
-    opacity: 1;
+.paige-header-link::after {
+    content: "#";
 }
 
-.paige-image {
-    margin-bottom: 1rem;
+.paige-quote .blockquote-footer {
+    margin-top: 0;
 }
 
-.paige-video {
-    margin-bottom: 1rem;
-    min-width: 550px;
+.paige-quote blockquote {
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
 
-#paige-content blockquote {
+blockquote {
     padding: 0.5rem 1rem;
     border-left: 0.25rem solid var(--bs-border-color);
-    padding-right: 0.25rem;
+    border-right: 0.25rem solid var(--bs-body-bg);
 }
 
-#paige-content blockquote > p:last-of-type {
+td,
+th {
+    padding: 0.25rem;
+}
+
+.highlight .chroma .hl,
+.highlight .chroma .lnt {
+    display: flex;
+}
+
+.paige-row-narrow:not(:last-child),
+.paige-figure .paige-quote,
+.paige-figure .paige-video,
+.paige-figure .highlight pre.chroma,
+.paige-figure .highlight .chroma pre,
+.paige-figure .paige-quote blockquote,
+.paige-figure figure > div > :last-child,
+.paige-gallery .paige-figure,
+.paige-gallery .paige-image,
+blockquote > p:last-of-type {
     margin-bottom: 0;
 }
 
+.paige-figure,
+.paige-gallery,
+.paige-image,
+.paige-quote,
+.paige-row-narrow:last-child,
+.paige-row-wide,
+.paige-video,
+#paige-content > *,
+table {
+    margin-bottom: 1rem;
+}
+
+.paige-header-link:focus,
+.paige-header-link:hover,
+:hover > .paige-header-link,
+:target > .paige-header-link {
+    opacity: 1;
+}
 
 
 
-@media (prefers-color-scheme: dark) {
-    /* Background */ .bg { color: #c9d1d9; background-color: var(--bs-body-bg); }
+
+    @media (prefers-color-scheme: dark) {
+        /* Background */ .bg { color: #c9d1d9; background-color: var(--bs-body-bg); }
 /* PreWrapper */ .chroma { color: #c9d1d9; background-color: var(--bs-body-bg); }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err { color: #f85149 }
@@ -352,10 +361,10 @@ body, html {
 /* GenericUnderline */ .chroma .gl { text-decoration: underline }
 /* TextWhitespace */ .chroma .w { color: #6e7681 }
 
-}
+    }
 
-@media (prefers-color-scheme: light) {
-    /* Background */ .bg { background-color: #ffffff; }
+    @media (prefers-color-scheme: light) {
+        /* Background */ .bg { background-color: #ffffff; }
 /* PreWrapper */ .chroma { background-color: #ffffff; }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err { color: #a61717; background-color: #e3d2d2 }
@@ -442,7 +451,7 @@ body, html {
 /* GenericUnderline */ .chroma .gl { text-decoration: underline }
 /* TextWhitespace */ .chroma .w { color: #bbbbbb }
 
-}
+    }
 
 
 @media (prefers-reduced-motion: reduce) {
@@ -483,31 +492,26 @@ body, html {
 
 </style>
 
-    <link href="/lightbox/css/lightbox.css" rel="stylesheet" />
-    <link rel="stylesheet" href="fancybox/fancybox.css" />
+
     
 </head>
 
-
-    <body class="d-flex flex-column">
+    <body>
 
         
 
-        <div class="container flex-fill" id="paige-root">
+        <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col mt-3" id="paige-site">
+                    
+
                     
 
 
-    <header class="my-3" id="paige-header">
-        
-
-        
 
 
 
 
-        
 
 
 
@@ -526,105 +530,111 @@ body, html {
 
 
 
-    <nav>
-        <ul class="align-items-center justify-content-center nav ">
-            
-                
-                
-                
-                
-                
+    <header id="paige-site-header">
+        
 
-                <li class="nav-item ">
-                    <a   class="  nav-link   text-decoration-underline "  href="/"    >Home</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a  aria-current="page"   class=" active  text-body-emphasis    nav-link   text-decoration-underline "  href="/impressionen"    >Impressionen</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link   text-decoration-underline "  href="/geschichte"    >Geschichte</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link   text-decoration-underline "  href="/verein"    >Verein</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link   text-decoration-underline "  href="/impressum"    >Impressum</a>
-
-                    
-                </li>
-            
-        </ul>
-    </nav>
-
+        
+            <div class="display-1 fw-bold  paige-row-wide text-center" id="paige-site-title">Usinger Spielerei</div>
+        
 
         
 
+        
+            
+                <nav aria-label="Menü" class="paige-row-wide" id="paige-menu">
+                    <ul class="align-items-center justify-content-center nav ">
+                        
+                            
+                            
+                            
+                            
+                            
 
-    <nav aria-label="Semmelbrösel" class="mt-3" id="paige-breadcrumbs">
-        <div class="d-flex justify-content-center">
-            <ol class="breadcrumb mb-0">
-                
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/"    >Home</a>
 
-                
+                                
+                            </li>
+                        
+                            
+                            
+                            
+                            
+                            
 
-                
-                    
+                            <li class="nav-item ">
+                                <a  aria-current="page"   class=" active  fw-bold text-body-emphasis    nav-link   text-decoration-underline "  href="/impressionen"    >Impressionen</a>
 
-                    
+                                
+                            </li>
+                        
+                            
+                            
+                            
+                            
+                            
 
-                    <li class="breadcrumb-item"><a href="/">Usinger Spielerei</a></li>
-                
-            </ol>
-        </div>
-    </nav>
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/geschichte"    >Geschichte</a>
 
+                                
+                            </li>
+                        
+                            
+                            
+                            
+                            
+                            
 
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/verein"    >Verein</a>
+
+                                
+                            </li>
+                        
+                            
+                            
+                            
+                            
+                            
+
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/impressum"    >Impressum</a>
+
+                                
+                            </li>
+                        
+                    </ul>
+                </nav>
+            
+        
+
+        
+            <nav aria-label="Brotkrumen" class="paige-row-wide" id="paige-breadcrumbs">
+                <div class="d-flex justify-content-center">
+                    <ol class="breadcrumb mb-0">
+                        
+
+                        
+
+                        
+                            
+
+                            
+
+                            <li class="breadcrumb-item"><a href="/">Usinger Spielerei</a></li>
+                        
+                    </ol>
+                </div>
+            </nav>
+        
 
         
     </header>
 
 
+                    
 
-                    <main class="mt-3" id="paige-main">
-                        
-
-                        
 
 
 
@@ -655,8 +665,8 @@ body, html {
 
 
 
-<article  class="paige-published paige-single"  id="paige-article">
-    <div class="align-items-center d-flex flex-column mb-0">
+<article class="paige-kind-page paige-published" id="paige-page">
+    <div class="align-items-center d-flex flex-column">
         
 
 
@@ -671,40 +681,45 @@ body, html {
 
 
 
-<div class="mw-100" id="paige-metadata">
-    
-        <h1 class="fw-bold text-center" id="paige-title">Impressionen</h1>
-    
 
-    
 
-    
-        <div class="mb-3">
+
+
+
+
+
+    <header class="mw-100" id="paige-page-header">
+        <div class="align-items-center d-flex flex-column">
+            
+
+            
+                <h1 class="fw-bold" id="paige-page-title">Impressionen</h1>
             
 
             
 
             
+                <div id="paige-metadata">
+                    
 
+                    
+
+                    
+
+                    
+
+                    
+                        <p class="paige-row-narrow text-center text-secondary" id="paige-reading-time">1 Minute</p>
+                    
+                </div>
             
 
             
-                <p class="mb-0 text-center text-secondary" id="paige-reading-time">1 Minute</p>
+
             
-        </div>
-    
-</div>
-
-        
-
-
-
-        
-
-
-    <div class="mw-100" id="paige-toc">
-        <div class="border mb-3 pe-3 ps-3 pt-3 rounded">
-            <nav id="TableOfContents">
+                <div class="paige-row-wide" id="paige-toc">
+                    <div class="border pe-3 ps-3 pt-3 rounded">
+                        <nav id="TableOfContents">
   <ul>
     <li>
       <ul>
@@ -714,16 +729,18 @@ body, html {
     </li>
   </ul>
 </nav>
+                    </div>
+                </div>
+            
+
+            
         </div>
-    </div>
+    </header>
+
 
 
         
-
-
-
-
-    <div class="mw-100" id="paige-content"><h3 id="spielerei-11032024">Spielerei 11.03.2024 <a aria-label="Verweise auf diesen Abschnitt" class="paige-header-link text-decoration-none" href="#spielerei-11032024">#</a></h3>
+            <main class="mw-100" id="paige-content"><h3 id="spielerei-11032024">Spielerei 11.03.2024<a aria-label="Verweis auf diesen Abschnitt" class="paige-header-link" href="#spielerei-11032024"></a></h3>
 <p>Mit etwas Retro-Flair&hellip;</p>
 
 
@@ -960,7 +977,7 @@ body, html {
 
 
 
-<img   class="rounded-5"    height="157"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/1_hu11152870032242661507.5094d05703befcaa6ddd8b6002339f092d411c958452d3c1b39158846419e395.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="157"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/1_hu11152870032242661507.5094d05703befcaa6ddd8b6002339f092d411c958452d3c1b39158846419e395.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -1163,7 +1180,7 @@ body, html {
 
 
 
-<img   class="rounded-5"    height="225"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/2_hu14056756304418162420.4ae3fbc0e4f78f8db72bca3f8d8375b93e31ecbdacb8d94be8687800982b1fd4.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="225"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/2_hu14056756304418162420.4ae3fbc0e4f78f8db72bca3f8d8375b93e31ecbdacb8d94be8687800982b1fd4.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -1366,7 +1383,7 @@ body, html {
 
 
 
-<img   class="rounded-5"    height="400"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/3_hu508167874983541852.5b9b93c6dd0ad15250a872d4364e881f9bbe1f829206c54becb1410eff9e552b.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="400"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/3_hu508167874983541852.5b9b93c6dd0ad15250a872d4364e881f9bbe1f829206c54becb1410eff9e552b.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -1569,7 +1586,7 @@ body, html {
 
 
 
-<img   class="rounded-5"    height="486"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/4_hu3957094015926535011.fffa48d323377ce1da222b93a04054e172d6e213303cedc3712704979ded380b.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="486"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/4_hu3957094015926535011.fffa48d323377ce1da222b93a04054e172d6e213303cedc3712704979ded380b.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -1772,7 +1789,7 @@ body, html {
 
 
 
-<img   class="rounded-5"    height="400"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/5_hu10927551315755266359.1bc4d31298d74e0b919c0169ad131251ae252732c09daab0d298f34267b41b59.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="400"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/5_hu10927551315755266359.1bc4d31298d74e0b919c0169ad131251ae252732c09daab0d298f34267b41b59.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -1975,7 +1992,7 @@ body, html {
 
 
 
-<img   class="rounded-5"    height="400"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/6_hu7621373650200129010.3efd9927800a16eab401e1c677c94a44fc78f204734ba6b85acbe071b8a69b0b.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="400"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielerei-240311/6_hu7621373650200129010.3efd9927800a16eab401e1c677c94a44fc78f204734ba6b85acbe071b8a69b0b.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -1986,7 +2003,7 @@ body, html {
 
 </div>
 
-<h3 id="spielewochenende-2024">Spielewochenende 2024 <a aria-label="Verweise auf diesen Abschnitt" class="paige-header-link text-decoration-none" href="#spielewochenende-2024">#</a></h3>
+<h3 id="spielewochenende-2024">Spielewochenende 2024<a aria-label="Verweis auf diesen Abschnitt" class="paige-header-link" href="#spielewochenende-2024"></a></h3>
 
 
 
@@ -2222,7 +2239,7 @@ body, html {
 
 
 
-<img   class="rounded-5"    height="225"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/3_hu2903208842332245270.f0e6ac42eafce36b05c05777c58f521dc5b37c781953aab0bc1f277dc8761f73.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="225"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/3_hu2903208842332245270.f0e6ac42eafce36b05c05777c58f521dc5b37c781953aab0bc1f277dc8761f73.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -2425,7 +2442,7 @@ body, html {
 
 
 
-<img   class="rounded-5"    height="209"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/4_hu12267406360567846990.67812221a7460679dafbde85ea37e3d22036e19b1cde8b9b31e923e0368c8859.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="209"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/4_hu12267406360567846990.67812221a7460679dafbde85ea37e3d22036e19b1cde8b9b31e923e0368c8859.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -2628,7 +2645,7 @@ body, html {
 
 
 
-<img   class="rounded-5"    height="306"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/5_hu354310587222106827.d3c85e4d982201796bf8dd1553361f6a811148fa892cf5e2207481dd1eae036a.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="306"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/5_hu354310587222106827.d3c85e4d982201796bf8dd1553361f6a811148fa892cf5e2207481dd1eae036a.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -2831,7 +2848,7 @@ body, html {
 
 
 
-<img   class="rounded-5"    height="225"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/spielewochenende1_hu14688440374059112148.2ebc85ea60f93812869c86f71d7bba740f3beb43068540159e696178572762c7.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="225"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/spielewochenende1_hu14688440374059112148.2ebc85ea60f93812869c86f71d7bba740f3beb43068540159e696178572762c7.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -3034,7 +3051,7 @@ body, html {
 
 
 
-<img   class="rounded-5"    height="546"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/spielewochenende2_hu15890190076592634814.24681728e0dfab0651f8317906474702f24e470c5549f9c4cd25549637d2c7d8.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="546"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/spielewochenende2_hu15890190076592634814.24681728e0dfab0651f8317906474702f24e470c5549f9c4cd25549637d2c7d8.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -3237,7 +3254,7 @@ body, html {
 
 
 
-<img   class="rounded-5"    height="190"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/trolle-und-prinzessinen_hu16699796965089812572.09cb82c0c0cd418bdc67159fc0ef0ba47a2099003cc586ac3d7bd1a9990b8fde.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
+<img   class="img-fluid rounded-5"    height="190"   referrerpolicy="no-referrer"  src="http://localhost:1313/impressionen/spielewochenende24/trolle-und-prinzessinen_hu16699796965089812572.09cb82c0c0cd418bdc67159fc0ef0ba47a2099003cc586ac3d7bd1a9990b8fde.webp"   style="height: auto; max-height: 10rem; max-width: 100%; width: auto"    width="300" ></a>
 
 
 </span>
@@ -3248,7 +3265,44 @@ body, html {
 
 </div>
 
-</div>
+</main>
+        
+
+        
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+    <footer class="mw-100" id="paige-page-footer">
+        
+
+        
+
+        
+            <div id="paige-siblings">
+                
+                    <div class="paige-row-narrow text-center text-secondary" id="paige-next"><a class="link-secondary" href="http://localhost:1313/impressum/">Impressum/Datenschutz</a> &rsaquo;</div>
+                
+
+                
+                    <div class="paige-row-narrow text-center text-secondary" id="paige-prev">&lsaquo; <a class="link-secondary" href="http://localhost:1313/geschichte/">Geschichte</a></div>
+                
+            </div>
+        
+
+        
+    </footer>
 
 
     </div>
@@ -3257,6 +3311,12 @@ body, html {
 
 
 
+
+
+
+
+
+
     
     
 
@@ -3294,12 +3354,12 @@ body, html {
 
 
 
+    
 
 
 
 
-                        
-                    </main>
+
 
                     
 
@@ -3311,50 +3371,38 @@ body, html {
 
 
 
-    
 
-    
-
-
-<footer class="mb-3" id="paige-footer">
-    
-
-    
-        <div class="mb-3" id="paige-prev-next">
-            
-                <p class="mb-0 text-center text-secondary" id="paige-prev">
-                    <a class="link-secondary" href="http://localhost:1313/impressum/">&larr; Impressum/Datenschutz</a>
-                </p>
-            
-
-            
-                <p class="mb-0 text-center text-secondary" id="paige-next">
-                    <a class="link-secondary" href="http://localhost:1313/geschichte/">Geschichte &rarr;</a>
-                </p>
-            
-        </div>
-    
 
     
 
-    
 
-    <p class="mb-0 text-center" id="paige-credit">
-        <a class="link-secondary text-decoration-none" href="https://github.com/willfaught/paige" >Paige Theme</a>
-    </p>
 
-    
-</footer>
 
+
+    <footer id="paige-site-footer">
+        
+
+        
+
+        
+
+        
+            <p class="paige-row-narrow text-center text-secondary" id="paige-credit">&lt;a class=&ldquo;link-secondary text-decoration-none&rdquo; href=&quot;{{ $theme }}&quot; {{ with $target }} target=&quot;{{ . }}&quot; {{ end }}&gt;Paige Theme</a></p>
+        
+
+        
+    </footer>
+
+
+
+                    
                 </div>
             </div>
         </div>
 
-        <noscript>JavaScript wird benötigt.</noscript>
+        
 <script src="/lightbox/js/lightbox-plus-jquery.min.js"></script>
 <script src="/fancybox/fancybox.umd.js"></script>
-
-
 
 
 
@@ -3444,7 +3492,7 @@ body, html {
 
 
 
-<noscript>JavaScript wird benötigt.</noscript>
+<noscript>JavaScript erforderlich</noscript>
 
         
     </body>

@@ -29,7 +29,10 @@ paige:
     #paige-content {
       width: 66ch;
     }
-  alert: "Taunus spielt! - Der Brettspieltag in Usingen war ein voller Erfolg. Danke an alle Beteiligten!"
+  alert: 
+    message: "Taunus spielt! - Der Brettspieltag in Usingen war ein voller Erfolg. Danke an alle Beteiligten!"
+    type: "primary" # Bootstrap alert class
+
 title: "Usinger Spielerei"
   
 ---

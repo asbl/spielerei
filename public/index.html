@@ -17,8 +17,14 @@
 
 
 
+
+
+
+
+
+
 <head>
-	<meta name="generator" content="Hugo 0.139.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.139.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
 
     
@@ -39,6 +45,7 @@
     <meta content="/browserconfig.xml" name="msapplication-config">
 
 
+<meta content="https://github.com/willfaught/paige" name="theme">
 <meta content="#0d6efd" name="theme-color">
 <meta content="width=device-width, initial-scale=1" name="viewport">
 
@@ -133,7 +140,7 @@
     
 
 
-<link  crossorigin="anonymous"  href="/css/paige/bootstrap/6186ad141d391e4c0c10d2e9cb4eaeaadf75e809-paige.min.44073eecf313643dc42bcc5cf7271a0c640dbc809615e487f4687c068a5fe7ea.css"  integrity="sha256-RAc&#43;7PMTZD3EK8xc9ycaDGQNvICWFeSH9Gh8Bopf5&#43;o="   referrerpolicy="no-referrer"  rel="stylesheet">
+<link  crossorigin="anonymous"  href="/css/paige/bootstrap/6186ad141d391e4c0c10d2e9cb4eaeaadf75e809-paige.min.3cce59baa4c0a377a71878f54d31de5b98388de7f970c7988c276bcf39500c5f.css"  integrity="sha256-PM5ZuqTAo3enGHj1TTHeW5g4jef5cMeYjCdrzzlQDF8="   referrerpolicy="no-referrer"  rel="stylesheet">
 
 
 
@@ -178,95 +185,93 @@
 <style>
 
 
-body, html {
-    height: 100%;
+.paige-figure-numbered {
+    counter-increment: paige-figure-numbered;
 }
 
-.highlight .chroma .hl, .highlight .chroma .lnt {
-    display: flex;
+.paige-figure-numbered > div > figure > figcaption::before {
+    content: "Abbildung " counter(paige-figure-numbered) ": ";
 }
 
-.paige-figure {
-    margin-bottom: 1rem;
-}
-
-.paige-figure > figure > div > :last-child {
-    margin-bottom: 0;
-}
-
-.paige-figure .highlight .chroma pre, .paige-figure .highlight pre.chroma {
-    margin-bottom: 0;
-}
-
-.paige-figure .paige-image {
-    margin-bottom: 0;
-}
-
-.paige-figure .paige-quote > blockquote {
-    margin-bottom: 0;
-}
-
-.paige-figure .paige-video {
-    margin-bottom: 0;
-}
-
-.paige-figure.paige-figure-numbered {
-    counter-increment: paige-figure;
-}
-
-.paige-figure.paige-figure-numbered figcaption:empty::before {
-    content: "Abbildung " counter(paige-figure);
-}
-
-.paige-figure.paige-figure-numbered figcaption::before {
-    content: "Abbildung " counter(paige-figure) ": ";
-}
-
-.paige-gallery {
-    margin-bottom: 1rem;
-}
-
-.paige-gallery .paige-figure {
-    margin-bottom: 0;
-}
-
-.paige-gallery .paige-image {
-    margin-bottom: 0;
+.paige-figure-numbered > div > figure > figcaption:empty::before {
+    content: "Abbildung " counter(paige-figure-numbered);
 }
 
 .paige-header-link {
     opacity: 0;
+    margin-left: 0.5rem;
+    position: absolute;
     transition: color 0.15s ease-in-out, opacity 0.15s ease-in-out;
 }
 
-.paige-header-link:focus, .paige-header-link:hover, :hover > .paige-header-link, :target > .paige-header-link {
-    opacity: 1;
+.paige-header-link::after {
+    content: "#";
 }
 
-.paige-image {
-    margin-bottom: 1rem;
+.paige-quote .blockquote-footer {
+    margin-top: 0;
 }
 
-.paige-video {
-    margin-bottom: 1rem;
-    min-width: 550px;
+.paige-quote blockquote {
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
 
-#paige-content blockquote {
+blockquote {
     padding: 0.5rem 1rem;
     border-left: 0.25rem solid var(--bs-border-color);
-    padding-right: 0.25rem;
+    border-right: 0.25rem solid var(--bs-body-bg);
 }
 
-#paige-content blockquote > p:last-of-type {
+td,
+th {
+    padding: 0.25rem;
+}
+
+.highlight .chroma .hl,
+.highlight .chroma .lnt {
+    display: flex;
+}
+
+.paige-row-narrow:not(:last-child),
+.paige-figure .paige-quote,
+.paige-figure .paige-video,
+.paige-figure .highlight pre.chroma,
+.paige-figure .highlight .chroma pre,
+.paige-figure .paige-quote blockquote,
+.paige-figure figure > div > :last-child,
+.paige-gallery .paige-figure,
+.paige-gallery .paige-image,
+blockquote > p:last-of-type {
     margin-bottom: 0;
 }
 
+.paige-figure,
+.paige-gallery,
+.paige-image,
+.paige-quote,
+.paige-row-narrow:last-child,
+.paige-row-wide,
+.paige-video,
+#paige-content > *,
+table {
+    margin-bottom: 1rem;
+}
+
+.paige-header-link:focus,
+.paige-header-link:hover,
+:hover > .paige-header-link,
+:target > .paige-header-link {
+    opacity: 1;
+}
 
 
 
-@media (prefers-color-scheme: dark) {
-    /* Background */ .bg { color: #c9d1d9; background-color: var(--bs-body-bg); }
+
+    @media (prefers-color-scheme: dark) {
+        /* Background */ .bg { color: #c9d1d9; background-color: var(--bs-body-bg); }
 /* PreWrapper */ .chroma { color: #c9d1d9; background-color: var(--bs-body-bg); }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err { color: #f85149 }
@@ -353,10 +358,10 @@ body, html {
 /* GenericUnderline */ .chroma .gl { text-decoration: underline }
 /* TextWhitespace */ .chroma .w { color: #6e7681 }
 
-}
+    }
 
-@media (prefers-color-scheme: light) {
-    /* Background */ .bg { background-color: #ffffff; }
+    @media (prefers-color-scheme: light) {
+        /* Background */ .bg { background-color: #ffffff; }
 /* PreWrapper */ .chroma { background-color: #ffffff; }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err { color: #a61717; background-color: #e3d2d2 }
@@ -443,7 +448,7 @@ body, html {
 /* GenericUnderline */ .chroma .gl { text-decoration: underline }
 /* TextWhitespace */ .chroma .w { color: #bbbbbb }
 
-}
+    }
 
 
 @media (prefers-reduced-motion: reduce) {
@@ -484,31 +489,26 @@ body, html {
 
 </style>
 
-    <link href="/lightbox/css/lightbox.css" rel="stylesheet" />
-    <link rel="stylesheet" href="fancybox/fancybox.css" />
+
     
 </head>
 
-
-    <body class="d-flex flex-column">
+    <body>
 
         
 
-        <div class="container flex-fill" id="paige-root">
+        <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col mt-3" id="paige-site">
+                    
+
                     
 
 
-    <header class="my-3" id="paige-header">
-        
-
-        
 
 
 
 
-        
 
 
 
@@ -527,87 +527,93 @@ body, html {
 
 
 
-    <nav>
-        <ul class="align-items-center justify-content-center nav ">
-            
-                
-                
-                
-                
-                
+    <header id="paige-site-header">
+        
 
-                <li class="nav-item ">
-                    <a  aria-current="page"   class=" active  text-body-emphasis    nav-link   text-decoration-underline "  href="/"    >Home</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link   text-decoration-underline "  href="/impressionen"    >Impressionen</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link   text-decoration-underline "  href="/geschichte"    >Geschichte</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link   text-decoration-underline "  href="/verein"    >Verein</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link   text-decoration-underline "  href="/impressum"    >Impressum</a>
-
-                    
-                </li>
-            
-        </ul>
-    </nav>
-
+        
+            <div class="display-1 fw-bold  paige-row-wide text-center" id="paige-site-title">Usinger Spielerei</div>
+        
 
         
 
+        
+            
+                <nav aria-label="Menü" class="paige-row-wide" id="paige-menu">
+                    <ul class="align-items-center justify-content-center nav ">
+                        
+                            
+                            
+                            
+                            
+                            
 
+                            <li class="nav-item ">
+                                <a  aria-current="page"   class=" active  fw-bold text-body-emphasis    nav-link   text-decoration-underline "  href="/"    >Home</a>
 
+                                
+                            </li>
+                        
+                            
+                            
+                            
+                            
+                            
+
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/impressionen"    >Impressionen</a>
+
+                                
+                            </li>
+                        
+                            
+                            
+                            
+                            
+                            
+
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/geschichte"    >Geschichte</a>
+
+                                
+                            </li>
+                        
+                            
+                            
+                            
+                            
+                            
+
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/verein"    >Verein</a>
+
+                                
+                            </li>
+                        
+                            
+                            
+                            
+                            
+                            
+
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/impressum"    >Impressum</a>
+
+                                
+                            </li>
+                        
+                    </ul>
+                </nav>
+            
+        
+
+        
 
         
     </header>
 
 
+                    
 
-                    <main class="mt-3" id="paige-main">
-                        
-
-                        
 
 
 
@@ -638,8 +644,8 @@ body, html {
 
 
 
-<article  class="paige-published paige-home"  id="paige-article">
-    <div class="align-items-center d-flex flex-column mb-0">
+<article class="paige-kind-home paige-published" id="paige-page">
+    <div class="align-items-center d-flex flex-column">
         
 
 
@@ -654,63 +660,68 @@ body, html {
 
 
 
-<div class="mw-100" id="paige-metadata">
-    
-        <h1 class="fw-bold text-center" id="paige-title">Usinger Spielerei</h1>
-    
 
-    
-        <p class="lead text-center" id="paige-description">Brettspielen in Usingen</p>
-    
 
-    
-        <div class="mb-3">
+
+
+
+
+
+    <header class="mw-100" id="paige-page-header">
+        <div class="align-items-center d-flex flex-column">
             
 
             
-
+                <h1 class="fw-bold" id="paige-page-title">Usinger Spielerei</h1>
             
 
             
+                <p class="lead paige-row-wide" id="paige-page-description">Brettspielen in Usingen</p>
+            
 
             
-                <p class="mb-0 text-center text-secondary" id="paige-reading-time">2 Minuten</p>
+                <div id="paige-metadata">
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p class="paige-row-narrow text-center text-secondary" id="paige-reading-time">2 Minuten</p>
+                    
+                </div>
             
-        </div>
-    
-</div>
 
-        
+            
+                <div class="alert alert-primary paige-row-wide" id="paige-alert" role="alert">Taunus spielt! - Der Brettspieltag in Usingen war ein voller Erfolg. Danke an alle Beteiligten!</div>
+            
 
-
-    
-        <div class="alert alert-primary" role="alert">Taunus spielt! - Der Brettspieltag in Usingen war ein voller Erfolg. Danke an alle Beteiligten!</div>
-    
-
-
-        
-
-
-    <div class="mw-100" id="paige-toc">
-        <div class="border mb-3 pe-3 ps-3 pt-3 rounded">
-            <nav id="TableOfContents">
+            
+                <div class="paige-row-wide" id="paige-toc">
+                    <div class="border pe-3 ps-3 pt-3 rounded">
+                        <nav id="TableOfContents">
   <ul>
     <li><a href="#nächste-termine">Nächste Termine</a></li>
     <li><a href="#über-uns">Über uns</a></li>
-    <li><a href="#hahahugoshortcode2s2hbhb">HAHAHUGOSHORTCODE2s2HBHB</a></li>
+    <li><a href="#hahahugoshortcode1s2hbhb">HAHAHUGOSHORTCODE1s2HBHB</a></li>
     <li><a href="#social-media">Social Media</a></li>
   </ul>
 </nav>
+                    </div>
+                </div>
+            
+
+            
         </div>
-    </div>
+    </header>
+
 
 
         
-
-
-
-
-    <div class="mw-100" id="paige-content">
+            <main class="mw-100" id="paige-content">
 
 
 
@@ -761,7 +772,8 @@ body, html {
 
 
 
-
+<div class="paige-image">
+    
 
 
 
@@ -839,7 +851,9 @@ body, html {
 
 
 
-<img      referrerpolicy="no-referrer"  src="http://localhost:1313/images/game4.jpg"   style="height: 20rem; width: auto"   ></span>
+<img   class="img-fluid "     referrerpolicy="no-referrer"  src="http://localhost:1313/images/game4.jpg"   style="height: 20rem; width: auto"   ></span>
+
+</div>
 
 </div>
 
@@ -847,7 +861,7 @@ body, html {
 
 <p>Spiele mit uns Brettspiele an jedem zweiten Montag im Monat im ev. Gemeindehaus in Usingen;</p>
 <hr>
-<h2 id="nächste-termine">Nächste Termine <a aria-label="Verweise auf diesen Abschnitt" class="paige-header-link text-decoration-none" href="#nächste-termine">#</a></h2>
+<h2 id="nächste-termine">Nächste Termine<a aria-label="Verweis auf diesen Abschnitt" class="paige-header-link" href="#nächste-termine"></a></h2>
 <div style="text-align:left">
 <ul>
 <li> Usinger Spielerei: Montag, 11. November im ev. Gemeindehaus</li>
@@ -907,7 +921,8 @@ body, html {
 
 
 
-
+<div class="paige-image">
+    
 
 
 
@@ -985,7 +1000,9 @@ body, html {
 
 
 
-<img      referrerpolicy="no-referrer"  src="http://localhost:1313/images/map.png"   style="height: 20rem; width: auto"   ></span>
+<img   class="img-fluid "     referrerpolicy="no-referrer"  src="http://localhost:1313/images/map.png"   style="height: 20rem; width: auto"   ></span>
+
+</div>
 
 </div>
 
@@ -993,7 +1010,7 @@ body, html {
 
 <p>Pfarrgasse 7 in Usingen - Evangelisches Gemeindehaus</p>
 <hr>
-<h2 id="über-uns">Über uns <a aria-label="Verweise auf diesen Abschnitt" class="paige-header-link text-decoration-none" href="#über-uns">#</a></h2>
+<h2 id="über-uns">Über uns<a aria-label="Verweis auf diesen Abschnitt" class="paige-header-link" href="#über-uns"></a></h2>
 <p>Lust auf gemeinsames <strong>Spielen</strong> in netter Runde? Du hast Spiele, die Du schon immer mal spielen wolltest, aber dir fehlten stets die Mitspieler?</p>
 <p>Dann laden wir dich herzlich ein. Wir spielen verschiedene <strong>aktuelle Brett- und Kartenspiele</strong>, manchmal Partyspiele, Familienspiele oder auch Spiele mit etwas mehr Strategie.</p>
 <p>Unser Leidenschaft äußert sich im <strong>Testen, Ausprobieren und Neuentdecken von Spielen</strong>. Was wir eher nicht anbieten, sind „Klassiker” wie beispielsweise Monopoly, Mensch-ärgere-dich-nicht, Mau-Mau usw.</p>
@@ -1002,7 +1019,7 @@ body, html {
 <p>Die Spielerei findet jeden zweiten Montag des Monats von 17:00-22:00 Uhr im Gemeindehaus der evangelischen Gemeinde in Usingen statt.</p>
 <p><strong>Alle Spielebegeisterten sind herzlich willkommen!</strong></p>
 <hr>
-<h2 id="hahahugoshortcode2s2hbhb">
+<h2 id="hahahugoshortcode1s2hbhb">
 
 
 
@@ -1053,7 +1070,8 @@ body, html {
 
 
 
-
+<div class="paige-image">
+    
 
 
 
@@ -1131,16 +1149,35 @@ body, html {
 
 
 
-<img      referrerpolicy="no-referrer"  src="http://localhost:1313/images/game3.jpg"   style="height: 20rem; width: auto"   ></span>
+<img   class="img-fluid "     referrerpolicy="no-referrer"  src="http://localhost:1313/images/game3.jpg"   style="height: 20rem; width: auto"   ></span>
+
+</div>
 
 </div>
 
 </div>
 </h2>
-<h2 id="social-media">Social Media <a aria-label="Verweise auf diesen Abschnitt" class="paige-header-link text-decoration-none" href="#social-media">#</a></h2>
+<h2 id="social-media">Social Media<a aria-label="Verweis auf diesen Abschnitt" class="paige-header-link" href="#social-media"></a></h2>
 <p>Discord: Wir organisieren uns über einen Discord-Kanal. - <a href="https://discord.gg/fQzCzA2qPP">Komm herein</a></p>
 <p>Außerdem findest du uns auf <a href="https://www.instagram.com/usinger_spielerei/">Instagram</a></p>
-</div>
+</main>
+        
+
+        
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
 
 
     </div>
@@ -1153,15 +1190,25 @@ body, html {
 
 
 
+
+
+    
+        
+    
+        
     
 
+
+
+
+
+
+
+
+
+
+
     
-
-
-
-
-
-
 
     <div id="paige-pages">
         
@@ -1169,23 +1216,8 @@ body, html {
         
 
         
-
-        
-        
-        
-
-        
             
 
-            
-
-            
-                
-
-                
-                    
-
-
 
 
 
@@ -1219,33 +1251,32 @@ body, html {
 
 
 
-<div class="mb-3 paige-page paige-published w-100">
+<div class="paige-page paige-published w-100">
     
-        <p class="mb-0 paige-title text-center"><a href="/geschichte/">Geschichte</a></p>
-    
-
-    
-
-    
-        <p class="fst-italic mb-0 paige-summary text-center"> Montag 12.09.2022 Die erste Spielerei findet statt &lt;/div&gt; Montag 11.09.2023 1 Jahr Usinger Spielerei &lt;img src=&#34;meeple.jpg&#34; alt=&#34;Meeple: 1 Jahr Usinger Spielerei&#34; style=&#34;width: 200px; margin-left: auto; margin-right: auto;&#34;/&gt; &lt;/div&gt; Sonntag 25.02.2024 Am Spielewochenende in Schmitten wird der Verein &#39;Usinger Spielerei&#39; gegründet &lt;/div&gt; 08.12.2024 Der Verein wurde in das Vereinsregister eingetragen. &lt;/div&gt; Samstag 12.10.2024 Über 70 Personen treffen sich zu &#39;Taunus spielt! - Der Brettspieltag in Usingen&#39;, unserer Veranstaltung in Kooperation mit der VHS &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; </p>
+        <p class="paige-row-narrow paige-title text-center"><a href="/geschichte/">Geschichte</a></p>
     
 
     
 
     
+        <p class="fst-italic paige-row-narrow paige-summary text-center"> Montag 12.09.2022 Die erste Spielerei findet statt &lt;/div&gt; Montag 11.09.2023 1 Jahr Usinger Spielerei &lt;img src=&#34;meeple.jpg&#34; alt=&#34;Meeple: 1 Jahr Usinger Spielerei&#34; style=&#34;width: 200px; margin-left: auto; margin-right: auto;&#34;/&gt; &lt;/div&gt; Sonntag 25.02.2024 Am Spielewochenende in Schmitten wird der Verein &#39;Usinger Spielerei&#39; gegründet &lt;/div&gt; 08.12.2024 Der Verein wurde in das Vereinsregister eingetragen. &lt;/div&gt; Samstag 12.10.2024 Über 70 Personen treffen sich zu &#39;Taunus spielt! - Der Brettspieltag in Usingen&#39;, unserer Veranstaltung in Kooperation mit der VHS &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; </p>
+    
+
+    
+
+    
 
     
 
     
 
     
-        <p class="mb-0 paige-reading-time text-center text-secondary">1 Minute</p>
+        <p class="paige-reading-time paige-row-narrow text-center text-secondary">1 Minute</p>
     
 </div>
 
-                
-                    
-
+        
+            
 
 
 
@@ -1280,15 +1311,15 @@ body, html {
 
 
 
-<div class="mb-3 paige-page paige-published w-100">
+<div class="paige-page paige-published w-100">
     
-        <p class="mb-0 paige-title text-center"><a href="/impressionen/">Impressionen</a></p>
-    
-
+        <p class="paige-row-narrow paige-title text-center"><a href="/impressionen/">Impressionen</a></p>
     
 
     
-        <p class="fst-italic mb-0 paige-summary text-center">Spielerei 11.03.2024 Mit etwas Retro-Flair…
+
+    
+        <p class="fst-italic paige-row-narrow paige-summary text-center">Spielerei 11.03.2024 Mit etwas Retro-Flair…
 Spielewochenende 2024 </p>
     
 
@@ -1301,13 +1332,12 @@ Spielewochenende 2024 </p>
     
 
     
-        <p class="mb-0 paige-reading-time text-center text-secondary">1 Minute</p>
+        <p class="paige-reading-time paige-row-narrow text-center text-secondary">1 Minute</p>
     
 </div>
 
-                
-                    
-
+        
+            
 
 
 
@@ -1342,15 +1372,15 @@ Spielewochenende 2024 </p>
 
 
 
-<div class="mb-3 paige-page paige-published w-100">
+<div class="paige-page paige-published w-100">
     
-        <p class="mb-0 paige-title text-center"><a href="/impressum/">Impressum/Datenschutz</a></p>
-    
-
+        <p class="paige-row-narrow paige-title text-center"><a href="/impressum/">Impressum/Datenschutz</a></p>
     
 
     
-        <p class="fst-italic mb-0 paige-summary text-center">Andreas Siebel | Auf der Schießmauer 5 | 61250 Usingen |
+
+    
+        <p class="fst-italic paige-row-narrow paige-summary text-center">Andreas Siebel | Auf der Schießmauer 5 | 61250 Usingen |
 Kontakt: vorstand@usinger-spielerei.de
 Datenschutz Auf der Seite wird kein Nutzertracking betrieben. Serverseitig werden jedoch in Logs personenbezogene Daten (z.B. die IP Adresse) gespeichert zwecks Fehleranalyse
 Es werden Daten (IP-Adresse) an folgende Dienste übergeben:
@@ -1367,13 +1397,12 @@ openstreetmap.org
     
 
     
-        <p class="mb-0 paige-reading-time text-center text-secondary">1 Minute</p>
+        <p class="paige-reading-time paige-row-narrow text-center text-secondary">1 Minute</p>
     
 </div>
 
-                
-                    
-
+        
+            
 
 
 
@@ -1408,15 +1437,15 @@ openstreetmap.org
 
 
 
-<div class="mb-3 paige-page paige-published w-100">
+<div class="paige-page paige-published w-100">
     
-        <p class="mb-0 paige-title text-center"><a href="/verein/">Usinger Spielerei - Der Verein</a></p>
-    
-
+        <p class="paige-row-narrow paige-title text-center"><a href="/verein/">Usinger Spielerei - Der Verein</a></p>
     
 
     
-        <p class="fst-italic mb-0 paige-summary text-center">Am 25.02.2024 wurde ein Verein gegründet. Am 08.10.2025 wurde der Verein ins Vereinsregister eingetragen.
+
+    
+        <p class="fst-italic paige-row-narrow paige-summary text-center">Am 25.02.2024 wurde ein Verein gegründet. Am 08.10.2025 wurde der Verein ins Vereinsregister eingetragen.
 Mitgliedsbeiträge:
 15€ pro Jahr Erwachsene
 5€ pro Jahr Kinder
@@ -1433,22 +1462,75 @@ Satzung
     
 
     
-        <p class="mb-0 paige-reading-time text-center text-secondary">1 Minute</p>
+        <p class="paige-reading-time paige-row-narrow text-center text-secondary">1 Minute</p>
     
 </div>
 
-                
-            
         
+
+        
+    
+
+    
+    
+
+    
+
     </div>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
 
     
 
 
 
 
-                        
-                    </main>
+
 
                     
 
@@ -1460,36 +1542,38 @@ Satzung
 
 
 
-    
 
-    
-
-
-<footer class="mb-3" id="paige-footer">
-    
 
     
 
-    
 
-    
 
-    <p class="mb-0 text-center" id="paige-credit">
-        <a class="link-secondary text-decoration-none" href="https://github.com/willfaught/paige" >Paige Theme</a>
-    </p>
 
-    
-</footer>
 
+    <footer id="paige-site-footer">
+        
+
+        
+
+        
+
+        
+            <p class="paige-row-narrow text-center text-secondary" id="paige-credit">&lt;a class=&ldquo;link-secondary text-decoration-none&rdquo; href=&quot;{{ $theme }}&quot; {{ with $target }} target=&quot;{{ . }}&quot; {{ end }}&gt;Paige Theme</a></p>
+        
+
+        
+    </footer>
+
+
+
+                    
                 </div>
             </div>
         </div>
 
-        <noscript>JavaScript wird benötigt.</noscript>
+        
 <script src="/lightbox/js/lightbox-plus-jquery.min.js"></script>
 <script src="/fancybox/fancybox.umd.js"></script>
-
-
 
 
 
@@ -1579,7 +1663,7 @@ Satzung
 
 
 
-<noscript>JavaScript wird benötigt.</noscript>
+<noscript>JavaScript erforderlich</noscript>
 
         
     </body>

@@ -14,6 +14,16 @@
 
 
 
+
+
+
+
+
+
+    
+
+    
+
     
 
 
@@ -38,6 +48,7 @@
     <meta content="/browserconfig.xml" name="msapplication-config">
 
 
+<meta content="https://github.com/willfaught/paige" name="theme">
 <meta content="#0d6efd" name="theme-color">
 <meta content="width=device-width, initial-scale=1" name="viewport">
 
@@ -140,7 +151,7 @@ openstreetmap.org">
     
 
 
-<link  crossorigin="anonymous"  href="/css/paige/bootstrap/6186ad141d391e4c0c10d2e9cb4eaeaadf75e809-paige.min.44073eecf313643dc42bcc5cf7271a0c640dbc809615e487f4687c068a5fe7ea.css"  integrity="sha256-RAc&#43;7PMTZD3EK8xc9ycaDGQNvICWFeSH9Gh8Bopf5&#43;o="   referrerpolicy="no-referrer"  rel="stylesheet">
+<link  crossorigin="anonymous"  href="/css/paige/bootstrap/6186ad141d391e4c0c10d2e9cb4eaeaadf75e809-paige.min.3cce59baa4c0a377a71878f54d31de5b98388de7f970c7988c276bcf39500c5f.css"  integrity="sha256-PM5ZuqTAo3enGHj1TTHeW5g4jef5cMeYjCdrzzlQDF8="   referrerpolicy="no-referrer"  rel="stylesheet">
 
 
 
@@ -183,95 +194,93 @@ openstreetmap.org">
 <style>
 
 
-body, html {
-    height: 100%;
+.paige-figure-numbered {
+    counter-increment: paige-figure-numbered;
 }
 
-.highlight .chroma .hl, .highlight .chroma .lnt {
-    display: flex;
+.paige-figure-numbered > div > figure > figcaption::before {
+    content: "Abbildung " counter(paige-figure-numbered) ": ";
 }
 
-.paige-figure {
-    margin-bottom: 1rem;
-}
-
-.paige-figure > figure > div > :last-child {
-    margin-bottom: 0;
-}
-
-.paige-figure .highlight .chroma pre, .paige-figure .highlight pre.chroma {
-    margin-bottom: 0;
-}
-
-.paige-figure .paige-image {
-    margin-bottom: 0;
-}
-
-.paige-figure .paige-quote > blockquote {
-    margin-bottom: 0;
-}
-
-.paige-figure .paige-video {
-    margin-bottom: 0;
-}
-
-.paige-figure.paige-figure-numbered {
-    counter-increment: paige-figure;
-}
-
-.paige-figure.paige-figure-numbered figcaption:empty::before {
-    content: "Abbildung " counter(paige-figure);
-}
-
-.paige-figure.paige-figure-numbered figcaption::before {
-    content: "Abbildung " counter(paige-figure) ": ";
-}
-
-.paige-gallery {
-    margin-bottom: 1rem;
-}
-
-.paige-gallery .paige-figure {
-    margin-bottom: 0;
-}
-
-.paige-gallery .paige-image {
-    margin-bottom: 0;
+.paige-figure-numbered > div > figure > figcaption:empty::before {
+    content: "Abbildung " counter(paige-figure-numbered);
 }
 
 .paige-header-link {
     opacity: 0;
+    margin-left: 0.5rem;
+    position: absolute;
     transition: color 0.15s ease-in-out, opacity 0.15s ease-in-out;
 }
 
-.paige-header-link:focus, .paige-header-link:hover, :hover > .paige-header-link, :target > .paige-header-link {
-    opacity: 1;
+.paige-header-link::after {
+    content: "#";
 }
 
-.paige-image {
-    margin-bottom: 1rem;
+.paige-quote .blockquote-footer {
+    margin-top: 0;
 }
 
-.paige-video {
-    margin-bottom: 1rem;
-    min-width: 550px;
+.paige-quote blockquote {
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
 
-#paige-content blockquote {
+blockquote {
     padding: 0.5rem 1rem;
     border-left: 0.25rem solid var(--bs-border-color);
-    padding-right: 0.25rem;
+    border-right: 0.25rem solid var(--bs-body-bg);
 }
 
-#paige-content blockquote > p:last-of-type {
+td,
+th {
+    padding: 0.25rem;
+}
+
+.highlight .chroma .hl,
+.highlight .chroma .lnt {
+    display: flex;
+}
+
+.paige-row-narrow:not(:last-child),
+.paige-figure .paige-quote,
+.paige-figure .paige-video,
+.paige-figure .highlight pre.chroma,
+.paige-figure .highlight .chroma pre,
+.paige-figure .paige-quote blockquote,
+.paige-figure figure > div > :last-child,
+.paige-gallery .paige-figure,
+.paige-gallery .paige-image,
+blockquote > p:last-of-type {
     margin-bottom: 0;
 }
 
+.paige-figure,
+.paige-gallery,
+.paige-image,
+.paige-quote,
+.paige-row-narrow:last-child,
+.paige-row-wide,
+.paige-video,
+#paige-content > *,
+table {
+    margin-bottom: 1rem;
+}
+
+.paige-header-link:focus,
+.paige-header-link:hover,
+:hover > .paige-header-link,
+:target > .paige-header-link {
+    opacity: 1;
+}
 
 
 
-@media (prefers-color-scheme: dark) {
-    /* Background */ .bg { color: #c9d1d9; background-color: var(--bs-body-bg); }
+
+    @media (prefers-color-scheme: dark) {
+        /* Background */ .bg { color: #c9d1d9; background-color: var(--bs-body-bg); }
 /* PreWrapper */ .chroma { color: #c9d1d9; background-color: var(--bs-body-bg); }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err { color: #f85149 }
@@ -358,10 +367,10 @@ body, html {
 /* GenericUnderline */ .chroma .gl { text-decoration: underline }
 /* TextWhitespace */ .chroma .w { color: #6e7681 }
 
-}
+    }
 
-@media (prefers-color-scheme: light) {
-    /* Background */ .bg { background-color: #ffffff; }
+    @media (prefers-color-scheme: light) {
+        /* Background */ .bg { background-color: #ffffff; }
 /* PreWrapper */ .chroma { background-color: #ffffff; }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err { color: #a61717; background-color: #e3d2d2 }
@@ -448,7 +457,7 @@ body, html {
 /* GenericUnderline */ .chroma .gl { text-decoration: underline }
 /* TextWhitespace */ .chroma .w { color: #bbbbbb }
 
-}
+    }
 
 
 @media (prefers-reduced-motion: reduce) {
@@ -489,31 +498,26 @@ body, html {
 
 </style>
 
-    <link href="/lightbox/css/lightbox.css" rel="stylesheet" />
-    <link rel="stylesheet" href="fancybox/fancybox.css" />
+
     
 </head>
 
-
-    <body class="d-flex flex-column">
+    <body>
 
         
 
-        <div class="container flex-fill" id="paige-root">
+        <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col mt-3" id="paige-site">
+                    
+
                     
 
 
-    <header class="my-3" id="paige-header">
-        
-
-        
 
 
 
 
-        
 
 
 
@@ -532,105 +536,111 @@ body, html {
 
 
 
-    <nav>
-        <ul class="align-items-center justify-content-center nav ">
-            
-                
-                
-                
-                
-                
+    <header id="paige-site-header">
+        
 
-                <li class="nav-item ">
-                    <a   class="  nav-link   text-decoration-underline "  href="/"    >Home</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link   text-decoration-underline "  href="/impressionen"    >Impressionen</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link   text-decoration-underline "  href="/geschichte"    >Geschichte</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a   class="  nav-link   text-decoration-underline "  href="/verein"    >Verein</a>
-
-                    
-                </li>
-            
-                
-                
-                
-                
-                
-
-                <li class="nav-item ">
-                    <a  aria-current="page"   class=" active  text-body-emphasis    nav-link   text-decoration-underline "  href="/impressum"    >Impressum</a>
-
-                    
-                </li>
-            
-        </ul>
-    </nav>
-
+        
+            <div class="display-1 fw-bold  paige-row-wide text-center" id="paige-site-title">Usinger Spielerei</div>
+        
 
         
 
+        
+            
+                <nav aria-label="Menü" class="paige-row-wide" id="paige-menu">
+                    <ul class="align-items-center justify-content-center nav ">
+                        
+                            
+                            
+                            
+                            
+                            
 
-    <nav aria-label="Semmelbrösel" class="mt-3" id="paige-breadcrumbs">
-        <div class="d-flex justify-content-center">
-            <ol class="breadcrumb mb-0">
-                
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/"    >Home</a>
 
-                
+                                
+                            </li>
+                        
+                            
+                            
+                            
+                            
+                            
 
-                
-                    
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/impressionen"    >Impressionen</a>
 
-                    
+                                
+                            </li>
+                        
+                            
+                            
+                            
+                            
+                            
 
-                    <li class="breadcrumb-item"><a href="/">Usinger Spielerei</a></li>
-                
-            </ol>
-        </div>
-    </nav>
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/geschichte"    >Geschichte</a>
 
+                                
+                            </li>
+                        
+                            
+                            
+                            
+                            
+                            
 
+                            <li class="nav-item ">
+                                <a   class="  nav-link   text-decoration-underline "  href="/verein"    >Verein</a>
+
+                                
+                            </li>
+                        
+                            
+                            
+                            
+                            
+                            
+
+                            <li class="nav-item ">
+                                <a  aria-current="page"   class=" active  fw-bold text-body-emphasis    nav-link   text-decoration-underline "  href="/impressum"    >Impressum</a>
+
+                                
+                            </li>
+                        
+                    </ul>
+                </nav>
+            
+        
+
+        
+            <nav aria-label="Brotkrumen" class="paige-row-wide" id="paige-breadcrumbs">
+                <div class="d-flex justify-content-center">
+                    <ol class="breadcrumb mb-0">
+                        
+
+                        
+
+                        
+                            
+
+                            
+
+                            <li class="breadcrumb-item"><a href="/">Usinger Spielerei</a></li>
+                        
+                    </ol>
+                </div>
+            </nav>
+        
 
         
     </header>
 
 
+                    
 
-                    <main class="mt-3" id="paige-main">
-                        
-
-                        
 
 
 
@@ -661,8 +671,8 @@ body, html {
 
 
 
-<article  class="paige-published paige-single"  id="paige-article">
-    <div class="align-items-center d-flex flex-column mb-0">
+<article class="paige-kind-page paige-published" id="paige-page">
+    <div class="align-items-center d-flex flex-column">
         
 
 
@@ -677,54 +687,61 @@ body, html {
 
 
 
-<div class="mw-100" id="paige-metadata">
-    
-        <h1 class="fw-bold text-center" id="paige-title">Impressum/Datenschutz</h1>
-    
 
-    
 
-    
-        <div class="mb-3">
+
+
+
+
+
+    <header class="mw-100" id="paige-page-header">
+        <div class="align-items-center d-flex flex-column">
+            
+
+            
+                <h1 class="fw-bold" id="paige-page-title">Impressum/Datenschutz</h1>
             
 
             
 
             
+                <div id="paige-metadata">
+                    
 
+                    
+
+                    
+
+                    
+
+                    
+                        <p class="paige-row-narrow text-center text-secondary" id="paige-reading-time">1 Minute</p>
+                    
+                </div>
             
 
             
-                <p class="mb-0 text-center text-secondary" id="paige-reading-time">1 Minute</p>
+
             
-        </div>
-    
-</div>
-
-        
-
-
-
-        
-
-
-    <div class="mw-100" id="paige-toc">
-        <div class="border mb-3 pe-3 ps-3 pt-3 rounded">
-            <nav id="TableOfContents">
+                <div class="paige-row-wide" id="paige-toc">
+                    <div class="border pe-3 ps-3 pt-3 rounded">
+                        <nav id="TableOfContents">
   <ul>
     <li><a href="#datenschutz">Datenschutz</a></li>
   </ul>
 </nav>
+                    </div>
+                </div>
+            
+
+            
         </div>
-    </div>
+    </header>
+
 
 
         
-
-
-
-
-    <div class="mw-100" id="paige-content"><p>Andreas Siebel |
+            <main class="mw-100" id="paige-content"><p>Andreas Siebel |
 Auf der Schießmauer 5 |
 61250 Usingen |</p>
 <p>Kontakt: <a href="mailto:vorstand@usinger-spielerei.de">vorstand@usinger-spielerei.de</a></p>
@@ -779,7 +796,8 @@ Auf der Schießmauer 5 |
 
 
 
-
+<div class="paige-image">
+    
 
 
 
@@ -857,17 +875,56 @@ Auf der Schießmauer 5 |
 
 
 
-<img      referrerpolicy="no-referrer"  src="http://localhost:1313/images/game7.jpg"   style="height: 20rem; width: auto"   ></span>
+<img   class="img-fluid "     referrerpolicy="no-referrer"  src="http://localhost:1313/images/game7.jpg"   style="height: 20rem; width: auto"   ></span>
 
 </div>
 
 </div>
 
-<h2 id="datenschutz">Datenschutz <a aria-label="Verweise auf diesen Abschnitt" class="paige-header-link text-decoration-none" href="#datenschutz">#</a></h2>
+</div>
+
+<h2 id="datenschutz">Datenschutz<a aria-label="Verweis auf diesen Abschnitt" class="paige-header-link" href="#datenschutz"></a></h2>
 <p>Auf der Seite wird kein Nutzertracking betrieben. Serverseitig werden jedoch in Logs personenbezogene Daten (z.B. die IP Adresse) gespeichert zwecks Fehleranalyse</p>
 <p>Es werden Daten (IP-Adresse) an folgende Dienste übergeben:</p>
 <p>openstreetmap.org</p>
-</div>
+</main>
+        
+
+        
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+    <footer class="mw-100" id="paige-page-footer">
+        
+
+        
+
+        
+            <div id="paige-siblings">
+                
+                    <div class="paige-row-narrow text-center text-secondary" id="paige-next"><a class="link-secondary" href="http://localhost:1313/verein/">Usinger Spielerei - Der Verein</a> &rsaquo;</div>
+                
+
+                
+                    <div class="paige-row-narrow text-center text-secondary" id="paige-prev">&lsaquo; <a class="link-secondary" href="http://localhost:1313/impressionen/">Impressionen</a></div>
+                
+            </div>
+        
+
+        
+    </footer>
 
 
     </div>
@@ -876,6 +933,12 @@ Auf der Schießmauer 5 |
 
 
 
+
+
+
+
+
+
     
     
 
@@ -913,12 +976,12 @@ Auf der Schießmauer 5 |
 
 
 
+    
 
 
 
 
-                        
-                    </main>
+
 
                     
 
@@ -930,50 +993,38 @@ Auf der Schießmauer 5 |
 
 
 
-    
 
-    
-
-
-<footer class="mb-3" id="paige-footer">
-    
-
-    
-        <div class="mb-3" id="paige-prev-next">
-            
-                <p class="mb-0 text-center text-secondary" id="paige-prev">
-                    <a class="link-secondary" href="http://localhost:1313/verein/">&larr; Usinger Spielerei - Der Verein</a>
-                </p>
-            
-
-            
-                <p class="mb-0 text-center text-secondary" id="paige-next">
-                    <a class="link-secondary" href="http://localhost:1313/impressionen/">Impressionen &rarr;</a>
-                </p>
-            
-        </div>
-    
 
     
 
-    
 
-    <p class="mb-0 text-center" id="paige-credit">
-        <a class="link-secondary text-decoration-none" href="https://github.com/willfaught/paige" >Paige Theme</a>
-    </p>
 
-    
-</footer>
 
+
+    <footer id="paige-site-footer">
+        
+
+        
+
+        
+
+        
+            <p class="paige-row-narrow text-center text-secondary" id="paige-credit">&lt;a class=&ldquo;link-secondary text-decoration-none&rdquo; href=&quot;{{ $theme }}&quot; {{ with $target }} target=&quot;{{ . }}&quot; {{ end }}&gt;Paige Theme</a></p>
+        
+
+        
+    </footer>
+
+
+
+                    
                 </div>
             </div>
         </div>
 
-        <noscript>JavaScript wird benötigt.</noscript>
+        
 <script src="/lightbox/js/lightbox-plus-jquery.min.js"></script>
 <script src="/fancybox/fancybox.umd.js"></script>
-
-
 
 
 
@@ -1063,7 +1114,7 @@ Auf der Schießmauer 5 |
 
 
 
-<noscript>JavaScript wird benötigt.</noscript>
+<noscript>JavaScript erforderlich</noscript>
 
         
     </body>
