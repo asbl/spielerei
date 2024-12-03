@@ -13,6 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+    - name: Install Go
+      uses: actions/setup-go@v4
+      with:
+        go-version: 'latest' # Du kannst die neueste Go-Version verwenden
+
       - name: Install Dart Sass
         run: sudo snap install dart-sass
 
@@ -62,6 +67,18 @@ jobs:
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
+
+          # SSH-Agent starten
+          eval "$(ssh-agent -s)"
+
+          # Private Key mit Kennwort hinzufügen
+          echo "$SSH_PRIVATE_KEY" | ssh-add - <<< "$SSH_PASSWORD"
+
+          # Server-Schlüssel zu known_hosts hinzufügen
           ssh-keyscan -p "$SERVER_PORT" "$SERVER_HOST" >> ~/.ssh/known_hosts
-            rsync -avz -e "ssh -i ~/.ssh/id_rsa -p $SERVER_PORT" $SERVER_PATH "$SERVER_USER@$SERVER_HOST:$SERVER_PATH"
+
+          # Teste die SSH-Verbindung
+          ssh -p "$SERVER_PORT" "$SERVER_USER@$SERVER_HOST" echo "SSH connection successful"
+
+          rsync -avz -e "ssh -i ~/.ssh/id_rsa -p $SERVER_PORT" $SERVER_PATH "$SERVER_USER@$SERVER_HOST:$SERVER_PATH"
         
