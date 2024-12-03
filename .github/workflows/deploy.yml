@@ -40,7 +40,7 @@ jobs:
 
       # 5. Website bauen
       - name: Build Hugo site
-        run: hugo 
+        run: hugo --debug --verbose
 
       # 6. Deploy zur Webspace via SSH
       - name: Deploy to Webspace

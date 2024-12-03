@@ -1,4 +1,122 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xml:lang="de" xmlns:atom="http://www.w3.org/2005/Atom"><channel><link href="http://usinger-spielerei.de/" rel="self" type="text/html"/><link href="http://usinger-spielerei.de/rss.xml" rel="alternate" type="application/rss+xml"/><description>Brettspielen in Usingen</description><language>de</language><link>http://usinger-spielerei.de/</link><title>Usinger Spielerei</title><item><description><![CDATA[<p>Am 25.02.2024 wurde ein Verein gegründet.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+        
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"  xml:lang="de"  xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+            
+
+            
+                
+            
+
+            
+                <link href="http://usinger-spielerei.de/" rel="self" type="text/html"/>
+            
+        
+            
+
+            
+
+            
+                <link href="http://usinger-spielerei.de/rss.xml" rel="alternate" type="application/rss+xml"/>
+            
+        
+
+        
+
+        
+
+        <description>Brettspielen in Usingen</description>
+
+        
+            <language>de</language>
+        
+
+        
+
+        <link>http://usinger-spielerei.de/</link>
+
+        
+
+        <title>Usinger Spielerei</title>
+
+        
+
+        
+            <item>
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+                    <description><![CDATA[<p>Am 25.02.2024 wurde ein Verein gegründet.
 Am 08.10.2025 wurde der Verein ins Vereinsregister eingetragen.</p>
 
 
@@ -144,7 +262,50 @@ Am 08.10.2025 wurde der Verein ins Vereinsregister eingetragen.</p>
 <p>5€ pro Jahr Kinder</p>
 <hr>
 <p><a href="satzung.pdf">Satzung</a></p>
-]]></description><guid isPermaLink="false">tag:usinger-spielerei.de,0001-01-01:/verein/</guid><link>http://usinger-spielerei.de/verein/</link><pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate><title>Usinger Spielerei - Der Verein</title></item><item><description><![CDATA[<p>Andreas Siebel |
+]]></description>
+                
+
+                <guid isPermaLink="false">tag:usinger-spielerei.de,0001-01-01:/verein/</guid>
+
+                
+                    <link>http://usinger-spielerei.de/verein/</link>
+                
+
+                
+                    <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+                
+
+                
+                    <title>Usinger Spielerei - Der Verein</title>
+                
+            </item>
+        
+            <item>
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+                    <description><![CDATA[<p>Andreas Siebel |
 Auf der Schießmauer 5 |
 61250 Usingen |</p>
 <p>Kontakt: <a href="mailto:vorstand@usinger-spielerei.de">vorstand@usinger-spielerei.de</a></p>
@@ -290,7 +451,50 @@ Auf der Schießmauer 5 |
 <p>Auf der Seite wird kein Nutzertracking betrieben. Serverseitig werden jedoch in Logs personenbezogene Daten (z.B. die IP Adresse) gespeichert zwecks Fehleranalyse</p>
 <p>Es werden Daten (IP-Adresse) an folgende Dienste übergeben:</p>
 <p>openstreetmap.org</p>
-]]></description><guid isPermaLink="false">tag:usinger-spielerei.de,0001-01-01:/impressum/</guid><link>http://usinger-spielerei.de/impressum/</link><pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate><title>Impressum/Datenschutz</title></item><item><description><![CDATA[<h3 id="spielerei-11032024">Spielerei 11.03.2024</h3>
+]]></description>
+                
+
+                <guid isPermaLink="false">tag:usinger-spielerei.de,0001-01-01:/impressum/</guid>
+
+                
+                    <link>http://usinger-spielerei.de/impressum/</link>
+                
+
+                
+                    <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+                
+
+                
+                    <title>Impressum/Datenschutz</title>
+                
+            </item>
+        
+            <item>
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+                    <description><![CDATA[<h3 id="spielerei-11032024">Spielerei 11.03.2024</h3>
 <p>Mit etwas Retro-Flair&hellip;</p>
 
 
@@ -2815,7 +3019,50 @@ Auf der Schießmauer 5 |
 
 </div>
 
-]]></description><guid isPermaLink="false">tag:usinger-spielerei.de,0001-01-01:/impressionen/</guid><link>http://usinger-spielerei.de/impressionen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate><title>Impressionen</title></item><item><description><![CDATA[<script src="/timeline/js/timeline.min.js"></script>
+]]></description>
+                
+
+                <guid isPermaLink="false">tag:usinger-spielerei.de,0001-01-01:/impressionen/</guid>
+
+                
+                    <link>http://usinger-spielerei.de/impressionen/</link>
+                
+
+                
+                    <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+                
+
+                
+                    <title>Impressionen</title>
+                
+            </item>
+        
+            <item>
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+                    <description><![CDATA[<script src="/timeline/js/timeline.min.js"></script>
 <link href="/timeline/css/timeline.min.css" rel="stylesheet" />
 
 <div class="timeline">
@@ -2873,4 +3120,23 @@ Auf der Schießmauer 5 |
         </div>
     </div>
 </div>
-]]></description><guid isPermaLink="false">tag:usinger-spielerei.de,0001-01-01:/geschichte/</guid><link>http://usinger-spielerei.de/geschichte/</link><pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate><title>Geschichte</title></item></channel></rss>
+]]></description>
+                
+
+                <guid isPermaLink="false">tag:usinger-spielerei.de,0001-01-01:/geschichte/</guid>
+
+                
+                    <link>http://usinger-spielerei.de/geschichte/</link>
+                
+
+                
+                    <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+                
+
+                
+                    <title>Geschichte</title>
+                
+            </item>
+        
+    </channel>
+</rss>
