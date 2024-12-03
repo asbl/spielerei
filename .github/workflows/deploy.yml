@@ -28,12 +28,12 @@ jobs:
       - name: Get Paige
         run: hugo mod get -u github.com/willfaught/paige/
 
-      - name: Debug SCSS Files
-        run: find assets/ -type f
+      - name: List all files
+        run: find . -type f
 
       - name: Debug Hugo Modules
         run: hugo mod graph
-        
+
       # 4. Debugging: Prüfe Dateien
       - name: Debug Shortcode Files
         run: find layouts/shortcodes -type f
