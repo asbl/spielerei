@@ -8,25 +8,13 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    container:
-      image: ubuntu:22.04
     steps:
       # 1. Repository auschecken
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install Go
-        uses: actions/setup-go@v4
-        with:
-          go-version: '1.20' # Du kannst die neueste Go-Version verwenden
-
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16' # Oder eine andere LTS-Version
-
       - name: Install Dart Sass
-        run: npm install -g sass
+        run: sudo snap install dart-sass
 
       # 2. Setup Hugo mit dem Actions-Modul
       - name: Setup Hugo
@@ -34,9 +22,6 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
-
-      - name: Install Git
-        run: sudo apt-get update && sudo apt-get install -y git
 
       # 3. Update Hugo Modules
       - name: Update Hugo Modules
@@ -91,4 +76,3 @@ jobs:
           ssh -p "$SERVER_PORT" "$SERVER_USER@$SERVER_HOST" echo "SSH connection successful"
 
           rsync -avz -e "ssh -i ~/.ssh/id_rsa -p $SERVER_PORT" $SERVER_PATH "$SERVER_USER@$SERVER_HOST:$SERVER_PATH"
-        
