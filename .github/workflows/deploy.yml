@@ -32,6 +32,10 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
+      - name: Test Go
+        run: |
+          go version
+
       # 3. Update Hugo Modules
       - name: Update Hugo Modules
         run: hugo mod get -u
