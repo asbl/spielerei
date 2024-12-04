@@ -98,4 +98,4 @@ jobs:
           # Teste die SSH-Verbindung
           sshpass -p "$SSH_PASSWORD" ssh -p "$SERVER_PORT" "$SERVER_USER@$SERVER_HOST" echo "SSH connection successful"
 
-          sshpass -p "$SSH_PASSWORD" rsync -avz -e "ssh -i ~/.ssh/id_rsa -p $SERVER_PORT" $SERVER_PATH "$SERVER_USER@$SERVER_HOST:$SERVER_PATH"
+          sshpass -p "$SSH_PASSWORD" rsync --progress -avz -e "ssh -i ~/.ssh/id_rsa -p $SERVER_PORT" public "$SERVER_USER@$SERVER_HOST:$SERVER_PATH"

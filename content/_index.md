@@ -30,7 +30,7 @@ paige:
       width: 66ch;
     }
   alert: 
-    message: "Taunus spielt! - Der Brettspieltag in Usingen war ein voller Erfolg. Danke an alle Beteiligten!"
+    message: "Nächste Spielereien: 09.12.24 und dann bereits am 02.01.25"
     type: "primary" # Bootstrap alert class
 
 title: "Usinger Spielerei"
@@ -51,6 +51,7 @@ Spiele mit uns Brettspiele an jedem zweiten Montag im Monat im ev. Gemeindehaus 
 <ul>
 <li> Usinger Spielerei: Montag, 11. November im ev. Gemeindehaus</li>
 <li> Usinger Spielerei: Montag, 09. Dezember im ev. Gemeindehaus</li>
+<li> Usinger Spielerei: Montag, 02. Januar ab 15:00(!) in Michelbach</li>
 </ul>
 </div>
 <b>Zeit</b>: Immer von 17:00 - 22:00 Uhr
