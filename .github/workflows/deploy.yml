@@ -9,14 +9,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Debug Environment
-        run: |
-          echo "OS Information:"
-          uname -a
-          echo "PATH:"
-          echo $PATH
-          echo "Available Binaries:"
-          ls /usr/bin /bin
 
       - name: Test Go
         run: |
@@ -29,10 +21,6 @@ jobs:
       - name: Install Dart Sass
         run: sudo snap install dart-sass
 
-      - name: Test Go
-        run: |
-          go version
-
       # 2. Installiere Hugo Extended
       - name: Install Hugo Extended
         run: |
@@ -42,19 +30,12 @@ jobs:
           sudo mv hugo /usr/local/bin/hugo
           hugo version
 
-      - name: Test Go
-        run: |
-          go version
-
-      # 3. Update Hugo Modules
       - name: Update Hugo Modules
         run: hugo mod get -u
 
-      # 3. Get paige
       - name: Get Paige
         run: hugo mod get -u github.com/willfaught/paige@v0.92.0
       
-
       - name: Vendor Hugo Modules
         run: hugo mod vendor
 
