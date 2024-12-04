@@ -21,7 +21,7 @@ jobs:
       - name: Test Go
         run: |
           go version
-          
+
       # 1. Repository auschecken
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -33,12 +33,14 @@ jobs:
         run: |
           go version
 
-      # 2. Setup Hugo mit dem Actions-Modul
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 'latest'
-          extended: true
+      # 2. Installiere Hugo Extended
+      - name: Install Hugo Extended
+        run: |
+          HUGO_VERSION="0.123.3" # Ersetze durch die gewünschte Version
+          curl -L "https://github.com/gohugoio/hugo/releases/download/v$HUGO_VERSION/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz" -o hugo.tar.gz
+          tar -xvzf hugo.tar.gz
+          sudo mv hugo /usr/local/bin/hugo
+          hugo version
 
       - name: Test Go
         run: |
