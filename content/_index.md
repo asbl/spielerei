@@ -49,7 +49,6 @@ Spiele mit uns Brettspiele an jedem zweiten Montag im Monat im ev. Gemeindehaus 
 
 <div style="text-align:left">
 <ul>
-<li> Usinger Spielerei: Montag, 11. November im ev. Gemeindehaus</li>
 <li> Usinger Spielerei: Montag, 09. Dezember im ev. Gemeindehaus</li>
 <li> Usinger Spielerei: Montag, 02. Januar ab 15:00(!) in Michelbach</li>
 </ul>
