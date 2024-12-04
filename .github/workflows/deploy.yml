@@ -17,12 +17,13 @@ jobs:
           echo $PATH
           echo "Available Binaries:"
           ls /usr/bin /bin
+
       # 1. Repository auschecken
       - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Install Dart Sass
-        run: sudo snap install dart-sass
+        run: snap install dart-sass
 
       # 2. Setup Hugo mit dem Actions-Modul
       - name: Setup Hugo
