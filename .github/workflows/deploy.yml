@@ -58,9 +58,6 @@ jobs:
       - name: Vendor Hugo Modules
         run: hugo mod vendor
 
-      - name: List all files
-        run: find . -type f
-
       - name: Debug Hugo Modules
         run: hugo mod graph
 
