@@ -36,7 +36,7 @@ jobs:
       # 2. Installiere Hugo Extended
       - name: Install Hugo Extended
         run: |
-          HUGO_VERSION="0.123.3" # Ersetze durch die gewünschte Version
+          HUGO_VERSION="0.139.3" # Ersetze durch die gewünschte Version
           curl -L "https://github.com/gohugoio/hugo/releases/download/v$HUGO_VERSION/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz" -o hugo.tar.gz
           tar -xvzf hugo.tar.gz
           sudo mv hugo /usr/local/bin/hugo
@@ -72,6 +72,9 @@ jobs:
       - name: Build Hugo site
         run: hugo
 
+      - name: Install sshpass
+        run: sudo apt-get update && sudo apt-get install -y sshpass
+
       # 6. Deploy zur Webspace via SSH
       - name: Deploy to Webspace
         env:
@@ -89,13 +92,10 @@ jobs:
           # SSH-Agent starten
           eval "$(ssh-agent -s)"
 
-          # Private Key mit Kennwort hinzufügen
-          echo "$SSH_PRIVATE_KEY" | ssh-add - <<< "$SSH_PASSWORD"
-
           # Server-Schlüssel zu known_hosts hinzufügen
           ssh-keyscan -p "$SERVER_PORT" "$SERVER_HOST" >> ~/.ssh/known_hosts
 
           # Teste die SSH-Verbindung
-          ssh -p "$SERVER_PORT" "$SERVER_USER@$SERVER_HOST" echo "SSH connection successful"
+          sshpass -p "$SSH_PASSWORD" ssh -p "$SERVER_PORT" "$SERVER_USER@$SERVER_HOST" echo "SSH connection successful"
 
-          rsync -avz -e "ssh -i ~/.ssh/id_rsa -p $SERVER_PORT" $SERVER_PATH "$SERVER_USER@$SERVER_HOST:$SERVER_PATH"
+          sshpass -p "$SSH_PASSWORD" rsync -avz -e "ssh -i ~/.ssh/id_rsa -p $SERVER_PORT" $SERVER_PATH "$SERVER_USER@$SERVER_HOST:$SERVER_PATH"
