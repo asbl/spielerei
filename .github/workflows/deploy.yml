@@ -69,14 +69,10 @@ jobs:
       - name: Build Hugo site
         run: hugo
 
-      - name: Install sshpass
-        run: sudo apt-get update && sudo apt-get install -y sshpass
-
       # 6. Deploy zur Webspace via SSH
       - name: Deploy to Webspace
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_KEY }}
-          SSH_PASSWORD: ${{ secrets.SSH_KEY }}
           SERVER_PORT: ${{ secrets.PORT }}
           SERVER_USER: ${{ secrets.USER }}
           SERVER_HOST: ${{ secrets.SERVER_NAME }}
@@ -90,7 +86,7 @@ jobs:
           ssh-keyscan -p "$SERVER_PORT" "$SERVER_HOST" >> ~/.ssh/known_hosts
 
           # Test SSH Connection
-          sshpass -p "$SSH_PASSWORD" ssh -v -p "$SERVER_PORT" "$SERVER_USER@$SERVER_HOST" echo "SSH connection successful"
+          ssh -v -p "$SERVER_PORT" "$SERVER_USER@$SERVER_HOST" echo "SSH connection successful"
 
           # Rsync mit sshpass
-          sshpass -p "$SSH_PASSWORD" rsync --progress -avz -e "ssh -p $SERVER_PORT" public/ "$SERVER_USER@$SERVER_HOST:$SERVER_PATH"
+          rsync --progress -avz -e "ssh -p $SERVER_PORT" public/ "$SERVER_USER@$SERVER_HOST:$SERVER_PATH"
