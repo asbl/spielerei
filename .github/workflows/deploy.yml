@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Dart Sass
-        run: snap install dart-sass
+        run: sudo snap install dart-sass
 
       # 2. Setup Hugo mit dem Actions-Modul
       - name: Setup Hugo
