@@ -55,6 +55,14 @@ url = "https://www.it-teaching.de"
         weight = 13
 
 
+
+    [[languages.de.menu.main]]
+        identifier = "Community"
+        name = "Community"
+        url = "/community"
+        weight = 14
+        
+
     [[languages.de.menu.main]]
         identifier = "Impressum/Datenschutz"
         name = "Impressum"
