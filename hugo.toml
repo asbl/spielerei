@@ -67,7 +67,7 @@ url = "https://www.it-teaching.de"
         identifier = "Impressum/Datenschutz"
         name = "Impressum"
         url = "/impressum"
-        weight = 14
+        weight = 15
 
 
 
