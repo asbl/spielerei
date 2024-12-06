@@ -31,7 +31,7 @@ paige:
 title: "Community"
 ---
 
-  * Wir organisieren uns über [Discord](https://discord.gg/R2M2a75zJh)
+  * Wir organisieren uns über [Discord](https://discord.gg/fQzCzA2qPP)
   * Auf [Facebook](https://www.facebook.com/profile.php?id=61565475465538) findest du auch
   * ...und auch auf instagram: [Usinger Spielerei](https://www.instagram.com/usinger_spielerei/)
   * Auch auf nebenan.de informieren wir regelmäßig über neue Veranstaltungen
