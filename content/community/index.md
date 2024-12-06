@@ -36,4 +36,4 @@ title: "Community"
   * ...und auch auf instagram: [Usinger Spielerei](https://www.instagram.com/usinger_spielerei/)
   * Auch auf nebenan.de informieren wir regelmäßig über neue Veranstaltungen
   * Hier kannst du dich auf unseren [E-Mail-Verteiler](https://usingerspielerei.my-spcloud.de/index.php/apps/forms/s/bk6Ntc4n9j7BGZJoHSkc8zzD) setzen lassen
-    ![qr-code](images/qr-email.png]
+    ![qr-code](images/qr-email.png)
