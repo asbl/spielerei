@@ -30,7 +30,7 @@ paige:
       width: 66ch;
     }
   alert: 
-    message: "Nächste Spielereien: 09.12.24 und dann bereits am 02.01.25"
+    message: "Nächste Spielereien: Neujahrsspielerei am 02.01.25"
     type: "primary" # Bootstrap alert class
 
 title: "Usinger Spielerei"
@@ -49,8 +49,10 @@ Spiele mit uns Brettspiele an jedem zweiten Montag im Monat im ev. Gemeindehaus 
 
 <div style="text-align:left">
 <ul>
-<li> Usinger Spielerei: Montag, 09. Dezember im ev. Gemeindehaus</li>
-<li> Usinger Spielerei: Montag, 02. Januar ab 15:00(!) in Michelbach</li>
+<li> Neujahrsspielerei: Montag, 02. Januar ab 15:00(!) im Bürgerhaus Michelbach</li>
+<li> Usinger Spielerei am 13. Januar im Gemeindehaus </li>
+<li> Mitgliederversammlung mit anschließendem Spieleabend am 27. Januar im Bürgerhaus Michelbach </li>
+<li> Usinger Spielerei am 10. Februar im Gemeindehaus </li>
 </ul>
 </div>
 <b>Zeit</b>: Immer von 17:00 - 22:00 Uhr
