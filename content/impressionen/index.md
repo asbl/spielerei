@@ -33,9 +33,8 @@ title: "Impressionen"
 
 ### Spielerei 09.12.2024
 
-Mit etwas Retro-Flair... 
 
-{{< paige/gallery class="rounded-5" images="spielerei-240912/*" process="300x center resize lanczos picture  webp" linked="unprocessed" type="rows" maxheight="10rem" />}}
+{{< paige/gallery class="rounded-5" images="spielerei-241209/*" process="300x center resize lanczos picture  webp" linked="unprocessed" type="rows" maxheight="10rem" />}}
 
 ### Spielerei 11.03.2024
 
