@@ -49,7 +49,7 @@ Spiele mit uns Brettspiele an jedem zweiten Montag im Monat im ev. Gemeindehaus 
 
 <div style="text-align:left">
 <ul>
-<li> Neujahrsspielerei: Montag, 02. Januar ab 15:00(!) im Bürgerhaus Michelbach</li>
+<li> Neujahrsspielerei: 02. Januar ab 15:00(!) im Bürgerhaus Michelbach</li>
 <li> Usinger Spielerei am 13. Januar im Gemeindehaus </li>
 <li> Mitgliederversammlung mit anschließendem Spieleabend am 27. Januar im Bürgerhaus Michelbach </li>
 <li> Usinger Spielerei am 10. Februar im Gemeindehaus </li>
