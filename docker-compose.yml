@@ -1,0 +1,16 @@
+services:
+  hugo:
+    env_file: .env
+    image: spielerei
+    build: 
+      context: .
+      args:
+        - HUGO_VERSION
+        - DART_SASS_VERSION
+    working_dir: /go/src
+    command: hugo server -D --bind 0.0.0.0 --noHTTPCache  --logLevel debug
+    volumes:
+      - .:/go/src
+    ports:
+      - "1313:1313"
+

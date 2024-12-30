@@ -1,5 +1,8 @@
 deploy.sh
 public
 public/*
+_vendor
 *Zone.identifier*
 *Zone.Identifier*
+resources/_gen
+.hugo_build.lock
