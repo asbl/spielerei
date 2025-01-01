@@ -1,2 +1,6 @@
+github.com/half-duplex/hugo-arcana v0.0.0-20241120153416-9fcf0964e35f h1:vPDGdDUFP7ByZM9I5Tf2cCCMReNAFe23LW58uOxWjMk=
+github.com/half-duplex/hugo-arcana v0.0.0-20241120153416-9fcf0964e35f/go.mod h1:Za8XD0Ysz7TWBA2kih2Q7BE4e/FJ1O/hZUHglcXzXvQ=
+github.com/mfg92/hugo-shortcode-gallery v1.3.0 h1:7wiUUu7adN3JbcshZfZ+Q0ZLDilPoGkquoor0ZcdJVU=
+github.com/mfg92/hugo-shortcode-gallery v1.3.0/go.mod h1:SEdbeBGSMX2lP+4nCqqy9AyTWWktUMWXYnR3r1l01Rw=
 github.com/willfaught/paige v0.92.0 h1:6vW2y31Z9Kf2l0M1U56GmqXz3ldtFU66rtaA4RGqXT0=
 github.com/willfaught/paige v0.92.0/go.mod h1:0Nt8ifl7UVYQIBaMtpZmg+BrQHHzFNqKcrBoA2Oo4/E=

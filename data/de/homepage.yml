@@ -1,0 +1,24 @@
+banner:
+  enable: true
+  image: "images/banner.jpg"
+  contents: "Die nächste Spielerei ist am 02. Januar 2025 ab 15:00 im Bürgerhaus Michelbach"
+  button:
+    contents: "Erfahre mehr"
+    url: "/termine"
+items:
+  - type: highlights
+    items_per_row: 3
+    items:
+    - title: Über uns
+      icon: fa-star
+      content: >
+        Lust auf gemeinsames Spielen in netter Runde? Du hast Spiele, die Du schon immer mal spielen wolltest, aber dir fehlten stets die Mitspieler? Dann laden wir dich herzlich ein. Wir spielen verschiedene aktuelle Brett- und Kartenspiele, manchmal Partyspiele, Familienspiele oder auch Spiele mit etwas mehr Strategie. 
+    - title: Leidenschaft
+      icon: fa-heart
+      content: >
+        Unser Leidenschaft äußert sich im Testen, Ausprobieren und Neuentdecken von Spielen. Was wir eher nicht anbieten, sind „Klassiker” wie beispielsweise Monopoly, Mensch-ärgere-dich-nicht, Mau-Mau usw. 
+    - title: Spiele
+      icon: fa-dice
+      content: >
+        Es stehen bei jedem Treffen einige Gesellschaftsspiele zum Ausprobieren bereit.
+        Du kannst auch gerne eigene Spiele mitbringen. Oder du fragst nach einem Spiel und wenn dies ein Mitglied besitzt stellen es bei einem der nächsten Treffen zur Verfügung. Also keine Sorge, wenn du selber keine Spiele zum Mitbringen hast. 

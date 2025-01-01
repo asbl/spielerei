@@ -1,0 +1,41 @@
+baseURL: http://usinger-spielerei.de/
+languageCode: de
+title: Usinger Spielerei
+defaultContentLanguage: de
+enablerobotstxt: true
+copyright: '© {currentYear} Usinger Spielerei e.V.'
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+module:
+  imports:
+    - path: github.com/half-duplex/hugo-arcana
+    - path: github.com/mfg92/hugo-shortcode-gallery
+
+authors:
+  - author: andreas-siebel
+    andreas-siebel:
+      default: false
+      email: andreas.siebel@it-teaching.de
+      name: Andreas Siebel
+      url: https://www.it-teaching.de
+
+params:
+  attribution: false
+  social:
+    - url: https://discord.gg/fQzCzA2qPP
+      icon: fa-discord
+      title: discord
+    - url: https://www.facebook.com/profile.php?id=61565475465538
+      icon: fa-facebook
+      title: facebook
+    - url: https://www.instagram.com/usinger_spielerei/
+      icon: fa-instagram
+      title: instagram
+
+languages:
+  de:
+    weight: 10
+    menu:
+      main: []
