@@ -5,6 +5,28 @@ defaultContentLanguage: de
 enablerobotstxt: true
 copyright: '© {currentYear} Usinger Spielerei e.V.'
 relativeURLs: true
+outputs:
+  page:
+    - html
+    - rss
+    - calendar
+  section:
+    - html
+    - rss
+    - calendar
+
+mediaTypes:
+  text/calendar:
+    suffixes:
+    - ics
+
+outputFormats:
+  calendar:
+    mediaType: "text/calendar"
+    baseName: "calendar"
+    isPlainText: true
+    permalinkable: true
+
 markup:
   goldmark:
     renderer:

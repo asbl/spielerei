@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<h2>{{ .Title }}</h2>
+{{ .Content }}
+
+{{ with .Pages }}
+<ul>
+  {{ range . }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
+
+<p>
+  {{ with .OutputFormats.Get "Calendar" }}
+  Kalenderimport für alle Termine:
+  <a href="{{ .RelPermalink }}" type="text/calendar">hier</a>.
+  {{ end }}
+</p>
+
+{{ end }}

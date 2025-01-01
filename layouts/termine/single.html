@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<h2>{{ .Title }}</h2>
+
+{{ .Content }}
+
+<h3>Termin Info</h3>
+<ul>
+  <li>Start: {{ .Params.startDate | time.Format "03.01.2006 15:04" }}</li>
+  <li>Ende: {{ .Params.endDate  | time.Format "03.01.2006 15:04" }}</li>
+  <li>Ort: {{ .Params.where }}</li>
+  <li>Veranstalter: {{ .Params.orga }}</li>
+  <li>Email: {{ .Params.orgaEmail }}</li>
+</ul>
+
+<p>
+  {{ with .OutputFormats.Get "Calendar" }}
+  Kalenderimport für den Termin:
+  <a href="{{ .RelPermalink }}" type="text/calendar">{{ $.Title }}.ics</a>
+  {{ end }}
+</p>
+
+{{ end }}
