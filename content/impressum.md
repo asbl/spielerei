@@ -17,4 +17,4 @@ Auf der Seite wird kein Nutzertracking betrieben. Serverseitig werden jedoch in 
 
 Es werden Daten (IP-Adresse) an folgende Dienste übergeben:
 
-openstreetmap.org
+umap.openstreetmap.fr
