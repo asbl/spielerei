@@ -2,8 +2,11 @@ _help:
   @just -l
 
 # build docker container
+docker-build:
+  docker compose --profile do-not-start build
+
 build:
-  docker compose build
+  docker compose run --rm hugo hugo
 
 # start docker container
 start:
