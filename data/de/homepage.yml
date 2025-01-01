@@ -1,9 +1,9 @@
 banner:
   enable: true
   image: "images/banner.jpg"
-  contents: "Die nächste Spielerei ist am 02. Januar 2025 ab 15:00 im Bürgerhaus Michelbach"
+  contents: "Spiele mit uns Brettspiele an jedem zweiten Montag im Monat ab 17:00 im Evangelischen Gemeindehaus"
   button:
-    contents: "Erfahre mehr"
+    contents: "Termine"
     url: "/termine/"
 items:
   - type: highlights
@@ -22,8 +22,3 @@ items:
       content: >
         Es stehen bei jedem Treffen einige Gesellschaftsspiele zum Ausprobieren bereit.
         Du kannst auch gerne eigene Spiele mitbringen. Oder du fragst nach einem Spiel und wenn dies ein Mitglied besitzt stellen es bei einem der nächsten Treffen zur Verfügung. Also keine Sorge, wenn du selber keine Spiele zum Mitbringen hast. 
-  - type: heading
-    heading: Spiele mit uns Brettspiele an jedem zweiten Montag im Monat
-    contents: >
-      <b>Wann:</b> 17:00 - 22:00 Uhr</br>
-      <b>Wo:</b> Evangelisches Gemeindehaus, Pfarrgasse 7, Usingen
