@@ -4,7 +4,7 @@ banner:
   contents: "Die nächste Spielerei ist am 02. Januar 2025 ab 15:00 im Bürgerhaus Michelbach"
   button:
     contents: "Erfahre mehr"
-    url: "/termine"
+    url: "/termine/"
 items:
   - type: highlights
     items_per_row: 3

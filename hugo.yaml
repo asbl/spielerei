@@ -4,6 +4,7 @@ title: Usinger Spielerei
 defaultContentLanguage: de
 enablerobotstxt: true
 copyright: '© {currentYear} Usinger Spielerei e.V.'
+relativeURLs: true
 markup:
   goldmark:
     renderer:
