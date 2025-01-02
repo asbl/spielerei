@@ -11,7 +11,7 @@ build:
 # start docker container
 start:
   docker compose up -d
-  @echo "Open: http://localhost:1313/"
+  @echo "Open: http://localhost:8080/"
 
 # stop docker container
 stop: 

@@ -7,5 +7,6 @@ description: "Bürgerhaus Michelbach, Hubertusstr. 11, 61250 Usingen"
 orga: "Usinger Spielerei"
 orgaEmail: "vorstand@usinger-spielerei.de"
 weight: 3
+image: images/game8.jpg
 ---
 {{< openstreetmap mapName="usingen-burgerhaus-michelbach_1158424" >}}

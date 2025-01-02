@@ -7,5 +7,6 @@ description: "Evangelisches Gemeindehaus, Pfarrgasse 7, 61250 Usingen"
 orga: "Usinger Spielerei"
 orgaEmail: "vorstand@usinger-spielerei.de"
 weight: 2
+image: images/game7.jpg
 ---
 {{< openstreetmap mapName="usingen-evangelisches-gemeindehaus_1158423" >}}
