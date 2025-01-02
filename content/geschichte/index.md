@@ -2,6 +2,7 @@
 title: "Geschichte"
 menu: main
 weight: 13
+bannerImage: /images/game6.jpg
 ---
 
 

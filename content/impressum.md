@@ -2,6 +2,7 @@
 title: "Impressum"
 menu: main
 weight: 99
+bannerImage: /images/game9.jpg
 ---
 
 Andreas Siebel | Auf der Schießmauer 5 | 61250 Usingen</br>

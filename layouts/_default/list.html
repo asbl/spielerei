@@ -1,11 +1,9 @@
 {{ define "main" }}
-
     <header>
         {{ with .Description -}}
             <p>{{ . }}</p>
         {{- end }}
     </header>
-
 
     {{- if .Params.image }}
         <span class="image featured"><img src="{{ .Params.image | relURL }}" alt="{{ .Params.image_alt }}" /></span>
@@ -14,12 +12,5 @@
     {{ range .RegularPages }}
         {{ .Render "shortblock" }}
     {{ end }}
-<p>
-  {{ with .OutputFormats.Get "Calendar" }}
-  Kalenderimport für alle Termine:
-  <a href="{{ .RelPermalink }}" type="text/calendar">hier</a>.
-  {{ end }}
-</p>
-
 
 {{ end }}
