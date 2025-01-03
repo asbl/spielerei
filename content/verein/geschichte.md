@@ -1,11 +1,9 @@
 ---
 title: "Geschichte"
-menu: main
-weight: 13
-bannerImage: /images/game6.jpg
+weight: 2
+image: images/game6.jpg
+summary: Die Geschichte des Vereins
 ---
-
-
 
 {{< timeline >}}
 

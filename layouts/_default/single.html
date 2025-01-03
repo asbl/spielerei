@@ -7,9 +7,5 @@
         {{ partial "tags.html" . }}
     </header>
 
-    {{- if .Params.image }}
-        <span class="image featured"><img src="{{ .Params.image | relURL }}" alt="{{ .Params.image_alt }}" /></span>
-    {{ end }}
-
     {{- .Content }}
 {{ end }}
