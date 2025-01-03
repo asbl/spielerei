@@ -1,4 +1,4 @@
-name: Deploy Hugo Website
+name: "Main / Deploy"
 
 on:
   push:
@@ -6,52 +6,45 @@ on:
       - main
 
 jobs:
-  deploy:
+  build:
+    name: "Build"
     runs-on: ubuntu-latest
     steps:
 
-      - name: Test Go
+      - name: "Golang / Version"
         run: |
           go version
 
-      # 1. Repository auschecken
-      - name: Checkout repository
+      - name: "Repo / Checkout"
         uses: actions/checkout@v3
 
-      - name: Install Dart Sass
+      - name: "Sass / Install"
         run: sudo snap install dart-sass
 
-      # 2. Installiere Hugo Extended
-      - name: Install Hugo Extended
-        run: |
-          HUGO_VERSION="0.139.3" # Ersetze durch die gewünschte Version
-          curl -L "https://github.com/gohugoio/hugo/releases/download/v$HUGO_VERSION/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz" -o hugo.tar.gz
-          tar -xvzf hugo.tar.gz
-          sudo mv hugo /usr/local/bin/hugo
-          hugo version
+      - name: "Hugo"
+        uses: ./.github/actions/hugo
+        with:
+          hugo-version: 0.139.3
 
-      - name: Update Hugo Modules
-        run: hugo mod get -u
+      - name: "Artifact / Upload"
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: public
+          if-no-files-found: error
+          retention-days: 7
 
-      - name: Get Paige
-        run: hugo mod get -u github.com/willfaught/paige@v0.92.0
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
       
-      - name: Vendor Hugo Modules
-        run: hugo mod vendor
+      - name: "Artfifact / Download"
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: public
 
-      - name: Debug Hugo Modules
-        run: hugo mod graph
-
-      # 4. Debugging: Prüfe Dateien
-      - name: Debug Shortcode Files
-        run: find layouts/shortcodes -type f
-
-      # 5. Website bauen
-      - name: Build Hugo site
-        run: hugo
-
-      # 6. Deploy zur Webspace via SSH
-      - name: Deploy to Webspace
+      - name: "Deploy"
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_KEY }}
           SERVER_PORT: ${{ secrets.PORT }}
