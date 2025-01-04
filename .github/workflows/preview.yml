@@ -1,4 +1,4 @@
-name: "Main / Deploy"
+name: "Deploy a preview to github pages"
 
 on:
   push:
