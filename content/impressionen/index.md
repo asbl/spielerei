@@ -4,6 +4,21 @@ menu: main
 weight: 12
 ---
 
+## Neujahrsspielerei am 02.01.2024
+
+{{<gallery
+    match="neujahrsspielerei-250201/*"
+    sortOrder="asc"
+    rowHeight="150"
+    margins="5"
+    thumbnailResizeOptions="600x600 q90 Lanczos"
+    showExif=true
+    previewType="none"
+    embedPreview=true
+    loadJQuery=true
+    lastRow="nojustify"
+>}}
+
 ### Spielerei 09.12.2024
 
 {{<gallery
