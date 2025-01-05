@@ -25,7 +25,7 @@ jobs:
         id: baseurl
         run: |
           echo "Setting baseURL for GitHub Pages"
-          echo "baseURL=https://asbl.github.io/spielerei/" >> $GITHUB_ENV
+          echo "baseURL=https://asbl.github.io/" >> $GITHUB_ENV
 
       - name: "Setup Hugo"
         uses: ./.github/actions/hugo
