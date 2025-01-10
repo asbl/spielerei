@@ -4,7 +4,7 @@ menu: main
 weight: 12
 ---
 
-## Neujahrsspielerei am 02.01.2024
+### Neujahrsspielerei am 02.01.2024
 
 {{<gallery
     match="neujahrsspielerei-250201/*"
@@ -19,6 +19,7 @@ weight: 12
     lastRow="nojustify"
 >}}
 
+---
 ### Spielerei 09.12.2024
 
 {{<gallery

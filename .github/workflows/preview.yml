@@ -21,20 +21,16 @@ jobs:
       - name: "Sass / Install"
         run: sudo snap install dart-sass
 
-      - name: "Determine BaseURL"
-        id: baseurl
-        run: |
-          echo "Setting baseURL for GitHub Pages"
-          echo "baseURL=https://asbl.github.io/" >> $GITHUB_ENV
-
       - name: "Setup Hugo"
         uses: ./.github/actions/hugo
         with:
           hugo-version: 0.139.3
 
       - name: "Build with Hugo"
+        shell: bash
         run: |
-          hugo --baseURL ${{ env.baseURL }}
+          echo "preview.usinger-spielerei.de" > public/CNAME
+          hugo --baseURL https://preview.usinger-spielerei.de
 
       - name: "Artifact / Upload"
         uses: actions/upload-artifact@v4
