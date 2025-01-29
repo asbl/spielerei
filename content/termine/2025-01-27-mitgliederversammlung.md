@@ -9,5 +9,9 @@ orga: "Usinger Spielerei"
 orgaEmail: "vorstand@usinger-spielerei.de"
 weight: 3
 image: images/game8.jpg
+bannerImages:
+  - /images/IMG_2118.jpeg
+  - /images/IMG_2770.jpeg
+  - /images/IMG_2982.jpeg
 ---
 {{< openstreetmap mapName="usingen-burgerhaus-michelbach_1158424" >}}

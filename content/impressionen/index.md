@@ -2,6 +2,10 @@
 title: "Impressionen"
 menu: main
 weight: 12
+bannerImages:
+  - /images/IMG_1449.jpeg
+  - /images/IMG_1450.jpeg
+  - /images/IMG_6267.jpeg
 ---
 
 ### Neujahrsspielerei am 02.01.2024

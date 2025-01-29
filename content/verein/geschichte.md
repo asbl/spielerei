@@ -3,6 +3,10 @@ title: "Geschichte"
 weight: 2
 image: images/game6.jpg
 summary: Die Geschichte des Vereins
+bannerImages:
+  - /images/IMG_5487.jpeg
+  - /images/IMG_5683.jpeg
+  - /images/IMG_6586.jpeg
 ---
 
 {{< timeline >}}

@@ -8,15 +8,7 @@
         {{- partial "analytics/google-tag-manager/body.html" . }}
         <div id="page-wrapper">
             {{- partial "header.html" . }}
-{{ with .Params.bannerImage }}
-<section id="banner" style="background-image: url({{ . }});">
-{{ else }}
-	    <section id="banner" style="background-image: url(/images/banner.jpg);">
-{{ end }}
-		        <header>
-        <h2>{{ .Title }}</h2>
-    </header>
-</section>
+	    {{- partial "homepage/banner.html" . -}}
             {{- $sidebar_count := (add (cond (isset .Params "sidebar_left") 1 0) (cond (isset .Params "sidebar_right") 1 0)) }}
 
             <section class="wrapper style1">

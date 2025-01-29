@@ -1,6 +1,5 @@
 banner:
   enable: true
-  image: "images/banner.jpg"
   contents: "Spiele mit uns Brettspiele an jedem zweiten Montag im Monat ab 17:00 im Evangelischen Gemeindehaus"
   button:
     contents: "Termine"
@@ -10,15 +9,14 @@ items:
     items_per_row: 3
     items:
     - title: Über uns
-      icon: fa-star
+      icon: fa-question
       content: >
-        Lust auf gemeinsames Spielen in netter Runde? Du hast Spiele, die Du schon immer mal spielen wolltest, aber dir fehlten stets die Mitspieler? Dann laden wir dich herzlich ein. Wir spielen verschiedene aktuelle Brett- und Kartenspiele, manchmal Partyspiele, Familienspiele oder auch Spiele mit etwas mehr Strategie. 
-    - title: Leidenschaft
-      icon: fa-heart
-      content: >
-        Unser Leidenschaft äußert sich im Testen, Ausprobieren und Neuentdecken von Spielen. Was wir eher nicht anbieten, sind „Klassiker” wie beispielsweise Monopoly, Mensch-ärgere-dich-nicht, Mau-Mau usw. 
-    - title: Spiele
+        Wir sind eine Gruppe von Leuten aus Usingen und Umgebung. Wir treffen uns ein bis mehrmals im Monat zu Spieletreffs und spielen verschiedene aktuelle Brett- und Kartenspiele, manchmal Partyspiele, Familienspiele oder auch Spiele mit etwas mehr Strategie.
+    - title: Unsere Spieletreffs
       icon: fa-dice
       content: >
-        Es stehen bei jedem Treffen einige Gesellschaftsspiele zum Ausprobieren bereit.
-        Du kannst auch gerne eigene Spiele mitbringen. Oder du fragst nach einem Spiel und wenn dies ein Mitglied besitzt stellen wir es bei einem der nächsten Treffen zur Verfügung. Also keine Sorge, wenn du selber keine Spiele zum Mitbringen hast. 
+        Unsere Spieletreffs sind für jedermann offen, meist sind wir zwischen 10 und 25 Leuten, häufig sind auch einige Kinder zum Spielen da. Es sind bei jedem Treffen diverse Spiele zum Ausprobieren vorhanden.
+    - title: Mitmachen
+      icon: fa-user-friends
+      content: >
+        Wenn du mitspielen- oder mitmachen willst, komm doch einfach bei einem unserer Spieletreffen vorbei. Hierfür musst du kein Vereinsmitglied sein, die Treffen sind für jedermann offen.
