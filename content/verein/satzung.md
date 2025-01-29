@@ -9,4 +9,4 @@ bannerImages:
   - /images/game6.jpg
 ---
 
-{{< pdf src="../satzung.pdf#view=FitH&toolbar=1" width="100%" height="600px" >}}
+{{< pdf src="../satzung.pdf#toolbar=1&navpanes=0&scrollbar=1&page=1&view=FitW" width="100%" height="600px" >}}
