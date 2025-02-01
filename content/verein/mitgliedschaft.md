@@ -16,3 +16,7 @@ Anfang 2024 haben wir unseren Verein „Usinger Spielerei“ gegründet. Mittler
 15€ pro Jahr Erwachsene </br>
 5€ pro Jahr Kinder
 
+### Dokumente
+[Satzung](/verein/Satzung.pdf) <br/>
+[Beitrittsformular](/verein/Beitrittsformular.pdf)
+
