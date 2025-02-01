@@ -75,7 +75,3 @@ languages:
           pageRef: /verein/geschichte
           parent: Verein
           weight: 2
-        - name: Satzung
-          pageRef: /verein/satzung
-          parent: Verein
-          weight: 3
