@@ -1,0 +1,49 @@
+name: "Deploy a preview to GitHub Pages"
+
+on:
+  push:
+    branches:
+      - feature/update-layout
+
+jobs:
+  build:
+    name: "Build"
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: "Golang / Version"
+        run: |
+          go version
+
+      - name: "Repo / Checkout"
+        uses: actions/checkout@v3
+
+      - name: "Sass / Install"
+        run: sudo snap install dart-sass
+
+      - name: "Setup Hugo"
+        uses: ./.github/actions/hugo
+        with:
+          hugo-version: 0.139.3
+
+      - name: "Build with Hugo"
+        shell: bash
+        run: |
+          echo "preview.usinger-spielerei.de" > public/CNAME
+          hugo --baseURL https://preview.usinger-spielerei.de
+
+      - name: "Artifact / Upload"
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: public
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: "Deploy to GitHub Pages"
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          force_orphan: true
+          publish_branch: gh-pages

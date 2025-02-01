@@ -1,0 +1,6 @@
+{{- $name := .Get "name" -}}
+{{- $class := default "brands" (.Get "class") -}}
+{{/* sizes: 2xs, xs, sm, lg, xl, 2xl */}}
+{{- $size := default "sm" (.Get "size") -}}
+<i class="icon {{ $class }} fa-{{ $name }}">
+</i>

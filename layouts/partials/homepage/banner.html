@@ -1,0 +1,16 @@
+<section id="slide-banner">
+    <ol id="slides-list">
+{{ with .Params.bannerImages }}
+{{ range . }}
+        <li class="slide" style="background-image: url({{ . }});"></li>
+{{ end }}
+{{ else }}
+        <li class="slide" style="background-image: url(/images/banner.jpg);"></li>
+{{ end }}
+    </ol>
+    <span class="nav fa fa-chevron-left fa-3x" id="left"></span>
+    <span class="nav fa fa-chevron-right fa-3x" id="right"></span>
+    <header>
+        <h2>{{ .Title }}</h2>
+    </header>
+</section>

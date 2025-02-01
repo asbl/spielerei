@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="{{ .Language }}">
+    <head>
+        {{- partial "head/head.html" . -}}
+        {{- template "_internal/opengraph.html" . -}}
+    </head>
+    <body class="is-preload">
+        {{- partial "analytics/google-tag-manager/body.html" . }}
+        <div id="page-wrapper">
+            {{- partial "header.html" . }}
+
+            <!-- Lookup homepage data in language data directory (e.g. data/en/homepage.yml).
+                 Defaults to data/homepage.yml if language specific data was not found. -->
+            {{- partial "homepage/banner.html" . -}}
+            {{ with index ( index .Site.Data .Site.Language.Lang | default .Site.Data ) (.Param "homepage_data" | default "homepage") }}
+
+                {{- range .items }}
+                    {{- partial (printf "homepage/blocks/%s.html" .type) (dict "ctx" $ "item" .) }}
+                {{- end }}
+            {{ end }}
+
+            {{- partial "footer/footer.html" . -}}
+        </div>
+        {{- partial "scripts.html" . -}}
+    </body>
+</html>
