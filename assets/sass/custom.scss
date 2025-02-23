@@ -6,7 +6,7 @@ div#header {
 }
 
 
-#slides-list {
+#my-slides-list {
     height: 28em;
     position: absolute;
     margin: 0px;
@@ -17,7 +17,7 @@ div#header {
     // -webkit-transition: all 0.66s ease;
 }
 
-.slide {
+.my-slide {
     list-style: none;
     position: relative;
     float: left;
@@ -59,7 +59,7 @@ div#header {
     float: right;
 }
 
-#slide-banner {
+#my-slide-banner {
         background-position: center center;
         background-size: cover;
         height: 28em;
