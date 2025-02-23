@@ -2,15 +2,22 @@ services:
   hugo:
     env_file: .env
     image: spielerei
+    profiles: 
+      - do-not-start
     build: 
       context: .
       args:
         - HUGO_VERSION
         - DART_SASS_VERSION
     working_dir: /go/src
-    command: hugo server -D --bind 0.0.0.0 --noHTTPCache  --logLevel debug
+    command: "sleep infinity"
     volumes:
       - .:/go/src
+
+  nginx:
+    image: nginx
+    volumes:
+      - ./public:/usr/share/nginx/html
     ports:
-      - "1313:1313"
+      - "8080:80"
 

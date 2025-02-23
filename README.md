@@ -34,14 +34,17 @@ brew install just
 
 * build docker container, required initially or after version or dependency changes
 ```
+just docker-build
 just build
 ```
 * start docker container
 ```
 just start
 ```
-* open http://localhost:1313/ in browser
+* open http://localhost:8080/ in browser
 * for further just targets run 
 ```
 just
 ```
+* if you need to rebuild hugo just run `just build` again
+* if you want to test the build artifact from github, remove all files in public and then unzip the artifact to public, this allows to verify the artifact will work

@@ -1,0 +1,77 @@
+baseURL: http://usinger-spielerei.de/
+languageCode: de
+title: Usinger Spielerei
+defaultContentLanguage: de
+enablerobotstxt: true
+copyright: '© {currentYear} Usinger Spielerei e.V.'
+relativeURLs: true
+outputs:
+  page:
+    - html
+    - rss
+    - calendar
+  section:
+    - html
+    - rss
+    - calendar
+
+mediaTypes:
+  text/calendar:
+    suffixes:
+    - ics
+
+outputFormats:
+  calendar:
+    mediaType: "text/calendar"
+    baseName: "calendar"
+    isPlainText: true
+    permalinkable: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+module:
+  imports:
+    - path: github.com/half-duplex/hugo-arcana
+    - path: github.com/mfg92/hugo-shortcode-gallery
+    - path: github.com/sytranvn/hugo-pdf
+    - path: github.com/Hanzei/hugo-component-osm
+
+authors:
+  - author: andreas-siebel
+    andreas-siebel:
+      default: false
+      email: andreas.siebel@it-teaching.de
+      name: Andreas Siebel
+      url: https://www.it-teaching.de
+
+params:
+  attribution: false
+  social:
+    - url: https://discord.gg/fQzCzA2qPP
+      icon: fa-discord
+      title: discord
+    - url: https://www.facebook.com/profile.php?id=61565475465538
+      icon: fa-facebook
+      title: facebook
+    - url: https://www.instagram.com/usinger_spielerei/
+      icon: fa-instagram
+      title: instagram
+
+languages:
+  de:
+    weight: 10
+    menu:
+      main:
+        - name: Verein
+          weight: 13
+          pageRef: /verein
+        - name: Mitgliedschaft
+          pageRef: /verein/mitgliedschaft
+          parent: Verein
+          weight: 1
+        - name: Geschichte
+          pageRef: /verein/geschichte
+          parent: Verein
+          weight: 2

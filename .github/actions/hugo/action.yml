@@ -1,0 +1,31 @@
+name: "Hugo"
+description: "Installs Hugo and its dependencies and builds hugo project"
+inputs:
+   hugo-version:
+     required: true
+     description: "Hugo version to install"
+
+runs:
+  using: "composite"
+  steps:
+    - name: "Hugo / Install"
+      shell: bash
+      run: |
+        curl -L "https://github.com/gohugoio/hugo/releases/download/v$HUGO_VERSION/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz" -o hugo.tar.gz
+        tar -xvzf hugo.tar.gz
+        sudo mv hugo /usr/local/bin/hugo
+        hugo version
+      env:
+        HUGO_VERSION: ${{ inputs.hugo-version }}
+
+    - name: "Hugo / Mods / Install"
+      shell: bash
+      run: hugo mod get
+
+    - name: "Hugo / Mods / Vendor"
+      shell: bash
+      run: hugo mod vendor
+
+    - name: "Hugo / Build"
+      shell: bash
+      run: hugo

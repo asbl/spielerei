@@ -1,0 +1,22 @@
+banner:
+  enable: true
+  contents: "Spiele mit uns Brettspiele an jedem zweiten Montag im Monat ab 17:00 im Evangelischen Gemeindehaus"
+  button:
+    contents: "Termine"
+    url: "/termine/"
+items:
+  - type: highlights
+    items_per_row: 3
+    items:
+    - title: Über uns
+      icon: fa-question
+      content: >
+        Wir sind eine Gruppe von Brettspielbegeisterten aus Usingen und Umgebung. Wir treffen uns regelmäßig, um gemeinschaftlich verschiedene Brett- und Kartenspiele, auch mal Party- oder Familienspiele, bis hin zu komplexeren Strategiespielen zu spielen. Wir organisieren auch verschiedene Brettspielveranstaltungen, z.B. "Taunus Spielt", Spieletreffs in Kooperation mit Schulen oder ein jährliches Brettspielwochenende an dem in familiärer Atmosphäre gespielt werden kann.
+    - title: Unsere Spieletreffs
+      icon: fa-dice
+      content: >
+        Unsere Spieletreffs sind für alle Brettspielinteressierte jeden Alters offen. Gespielt wird in zufälligen Gruppen. Im Veranstaltungszeitraum werden immer wieder neue Spiele begonnen oder die Gruppen gewechselt, sodass auch Besucher, welche später eintreffen, die Möglichkeit haben mit zu spielen. Es ist immer eine große Anzahl an Spielen, welche von den Anwesenden mitgebracht werden, vorhanden. Die Termine zu den Spieletreffs findest Du in unserer Übersicht auf dieser Seite.
+    - title: Mitmachen
+      icon: fa-user-friends
+      content: >
+        Wenn Du auch so begeistert von Brettspielen bist wie wir oder einfach nur neugierig geworden bist, schau doch mal bei einem unserer Spieletreffs vorbei. Hierfür musst Du kein Vereinsmitglied sein. Du bist herzlich willkommen!

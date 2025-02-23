@@ -1,0 +1,11 @@
+{{ define "main" }}
+    <header>
+        <p>{{ .Description }}</p>
+        {{ if .Site.Params.show_post_dates | default true }}
+            {{- with .Date }}<time>{{ . | time.Format ":date_medium" }}</time>{{ end }}
+        {{ end }}
+        {{ partial "tags.html" . }}
+    </header>
+
+    {{- .Content }}
+{{ end }}

@@ -1,0 +1,33 @@
+name: "PR / Test"
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    name: "Build"
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: "Golang / Version"
+        run: |
+          go version
+
+      - name: "Repo / Checkout"
+        uses: actions/checkout@v3
+
+      - name: "Sass / Install"
+        run: sudo snap install dart-sass
+
+      - name: "Hugo"
+        uses: ./.github/actions/hugo
+        with:
+          hugo-version: 0.139.3
+
+      - name: "Artifact / Upload"
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: public
+          if-no-files-found: error
+          retention-days: 7

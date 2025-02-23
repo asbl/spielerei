@@ -1,0 +1,119 @@
+div#header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 99;
+}
+
+
+#my-slides-list {
+    height: 28em;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    // transition: all 0.66s ease;
+    // -webkit-transition: all 0.66s ease;
+}
+
+.my-slide {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 28em;
+    background: #ccc;
+    text-align: center;
+    line-height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: #fff;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform-style: preserve-3d;
+}
+
+.nav {
+    position: relative;
+    z-index: 9;
+    top: 45%;
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.7;
+    transition: all 0.66s ease;
+    -webkit-transition: all 0.66s ease;
+}
+
+.nav:hover {
+    opacity: 1.0;
+}
+
+#left {
+    left: 3%;
+    float: left;
+}
+
+#right {
+    right: 3%;
+    float: right;
+}
+
+#my-slide-banner {
+        background-position: center center;
+        background-size: cover;
+        height: 28em;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+
+        header {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(27,27,27,0.75);
+            color: _palette(accent, fg);
+            padding: 1.5em 0;
+
+            h2 {
+                display: inline-block;
+                margin: 0;
+                font-size: 1.25em;
+                vertical-align: middle;
+
+                em {
+                    opacity: 0.75;
+                }
+
+                a {
+                    border-bottom-color: transparentize(_palette(accent, fg), 0.5);
+
+                    &:hover {
+                        border-bottom-color: transparent;
+                    }
+                }
+            }
+
+            .button {
+                vertical-align: middle;
+                margin-left: 1em;
+            }
+        }
+    }
+
+.title{
+  h1 {
+    display: block;
+    height: 90px;
+    width: 90px;
+    line-height: 90px;
+
+    -moz-border-radius: 45px;
+    border-radius: 45px;
+
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+}
