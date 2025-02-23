@@ -102,3 +102,18 @@ div#header {
         }
     }
 
+.title{
+  h1 {
+    display: block;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+}
