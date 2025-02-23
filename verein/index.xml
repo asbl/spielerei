@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Verein on Usinger Spielerei</title>
+    <link>https://preview.usinger-spielerei.de/verein/</link>
+    <description>Recent content in Verein on Usinger Spielerei</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <copyright>© {currentYear} Usinger Spielerei e.V.</copyright>
+    <atom:link href="https://preview.usinger-spielerei.de/verein/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mitgliedschaft</title>
+      <link>https://preview.usinger-spielerei.de/verein/mitgliedschaft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://preview.usinger-spielerei.de/verein/mitgliedschaft/</guid>
+      <description>Alle Informationen rund um die Mitgliedschaft</description>
+    </item>
+    <item>
+      <title>Geschichte</title>
+      <link>https://preview.usinger-spielerei.de/verein/geschichte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://preview.usinger-spielerei.de/verein/geschichte/</guid>
+      <description>Die Geschichte des Vereins</description>
+    </item>
+  </channel>
+</rss>
