@@ -7,7 +7,7 @@ div#header {
 
 
 #my-slides-list {
-    height: 28em;
+    height: 20em;
     position: absolute;
     margin: 0px;
     padding: 0px;
@@ -23,7 +23,7 @@ div#header {
     float: left;
     margin: 0;
     padding: 0;
-    height: 28em;
+    height: 20em;
     background: #ccc;
     text-align: center;
     line-height: 100%;
@@ -62,7 +62,7 @@ div#header {
 #my-slide-banner {
         background-position: center center;
         background-size: cover;
-        height: 28em;
+        height: 20em;
         text-align: center;
         position: relative;
         overflow: hidden;
@@ -117,3 +117,35 @@ div#header {
     text-align: center;
   }
 }
+
+#logo-wrapper {
+  display: inline-block;
+  padding-top: 5px;
+  text-align: center; 
+  vertical-align: middle;
+  h1 {
+  display: inline-block;
+    //display: block;
+    height: 180px;
+    width: 180px;
+    line-height: 180px;
+
+    -moz-border-radius: 90px;
+    border-radius: 90px;
+
+    background-color: white;
+    color: black;
+    text-align: center;
+                            img {
+                            height: 88px;
+                            padding-bottom: 4px;
+                            padding-top: 4px;
+                            vertical-align: middle;
+                        }
+  }
+}
+
+div#header  {
+  background-color: _palette(obscure, bg);
+  padding: 0px;
+    }
