@@ -37,6 +37,7 @@ module:
     - path: github.com/mfg92/hugo-shortcode-gallery
     - path: github.com/sytranvn/hugo-pdf
     - path: github.com/Hanzei/hugo-component-osm
+    - path: github.com/martignoni/hugo-notice
 
 authors:
   - author: andreas-siebel
