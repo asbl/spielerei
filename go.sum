@@ -2,6 +2,8 @@ github.com/Hanzei/hugo-component-osm v0.0.1 h1:F2FUyiN/xnxXgMtMdNJQPOYGbrNh68xC2
 github.com/Hanzei/hugo-component-osm v0.0.1/go.mod h1:OySqkzA+1zwxeo15W/1P33bytoq70+4Wx7TaLRVVxhs=
 github.com/half-duplex/hugo-arcana v0.0.0-20241120153416-9fcf0964e35f h1:vPDGdDUFP7ByZM9I5Tf2cCCMReNAFe23LW58uOxWjMk=
 github.com/half-duplex/hugo-arcana v0.0.0-20241120153416-9fcf0964e35f/go.mod h1:Za8XD0Ysz7TWBA2kih2Q7BE4e/FJ1O/hZUHglcXzXvQ=
+github.com/martignoni/hugo-notice v0.0.0-20240707105359-40327ac00cc4 h1:lxS0B1ta9/uW+orrnvsGHMCC0TgN4DymEgdlb0PL/uU=
+github.com/martignoni/hugo-notice v0.0.0-20240707105359-40327ac00cc4/go.mod h1:MIQPOMgEcbyRC0gNLzQFSgrS+wIy3RuQ/HbaZYtTOKU=
 github.com/mfg92/hugo-shortcode-gallery v1.3.0 h1:7wiUUu7adN3JbcshZfZ+Q0ZLDilPoGkquoor0ZcdJVU=
 github.com/mfg92/hugo-shortcode-gallery v1.3.0/go.mod h1:SEdbeBGSMX2lP+4nCqqy9AyTWWktUMWXYnR3r1l01Rw=
 github.com/sytranvn/hugo-pdf v1.1.0 h1:mnC9HqGnsZMQvJ/DmhSO+QkPJX6Y2A/pMg31UF7PHiY=

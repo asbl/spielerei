@@ -3,7 +3,7 @@ name: "Deploy a preview to GitHub Pages"
 on:
   push:
     branches:
-      - feature/update-layout
+      - feature/**
 
 jobs:
   build:
