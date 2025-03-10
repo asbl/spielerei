@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Termine on Usinger Spielerei</title>
+    <link>https://preview.usinger-spielerei.de/termine/</link>
+    <description>Recent content in Termine on Usinger Spielerei</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <copyright>© {currentYear} Usinger Spielerei e.V.</copyright>
+    <atom:link href="https://preview.usinger-spielerei.de/termine/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>10.03.2025 - Usinger Spielerei</title>
+      <link>https://preview.usinger-spielerei.de/termine/2025-03-10-spielerei/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://preview.usinger-spielerei.de/termine/2025-03-10-spielerei/</guid>
+      <description>&lt;iframe width=&#34;100%&#34; height=&#34;600px&#34; frameBorder=&#34;0&#34; src=&#34;https://umap.openstreetmap.fr/en/map/usingen-evangelisches-gemeindehaus_1158423?scaleControl=true&amp;miniMap=true&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=true&amp;searchControl=true&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=null&amp;onLoadPanel=none&amp;captionBar=true&amp;fullscreenControl=null//&#34;&gt;&lt;/iframe&gt;</description>
+    </item>
+    <item>
+      <title>24.03.2025 - Usinger Spielerei</title>
+      <link>https://preview.usinger-spielerei.de/termine/2025-03-24-spielerei/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://preview.usinger-spielerei.de/termine/2025-03-24-spielerei/</guid>
+      <description>&lt;iframe width=&#34;100%&#34; height=&#34;600px&#34; frameBorder=&#34;0&#34; src=&#34;https://umap.openstreetmap.fr/en/map/usingen-burgerhaus-michelbach_1158424?scaleControl=true&amp;miniMap=true&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=true&amp;searchControl=true&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=null&amp;onLoadPanel=none&amp;captionBar=true&amp;fullscreenControl=null//&#34;&gt;&lt;/iframe&gt;</description>
+    </item>
+    <item>
+      <title>05/06.04.2025 - Usinger Spielewochenende (Anmeldung erforderlich)</title>
+      <link>https://preview.usinger-spielerei.de/termine/2025-04-05-spielewochenende/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://preview.usinger-spielerei.de/termine/2025-04-05-spielewochenende/</guid>
+      <description>&lt;p&gt;&lt;style type=&#34;text/css&#34;&gt;&#xA;     &#xA;    .notice {&#xA;        --title-color: #fff;&#xA;        --title-background-color: #6be;&#xA;        --content-color: #444;&#xA;        --content-background-color: #e7f2fa;&#xA;    }&#xA;&#xA;    .notice.info {&#xA;        --title-background-color: #fb7;&#xA;        --content-background-color: #fec;&#xA;    }&#xA;&#xA;    .notice.tip {&#xA;        --title-background-color: #5a5;&#xA;        --content-background-color: #efe;&#xA;    }&#xA;&#xA;    .notice.warning {&#xA;        --title-background-color: #c33;&#xA;        --content-background-color: #fee;&#xA;    }&#xA;&#xA;     &#xA;    @media (prefers-color-scheme:dark) {&#xA;        .notice {&#xA;            --title-color: #fff;&#xA;            --title-background-color: #069;&#xA;            --content-color: #ddd;&#xA;            --content-background-color: #023;&#xA;        }&#xA;&#xA;        .notice.info {&#xA;            --title-background-color: #a50;&#xA;            --content-background-color: #420;&#xA;        }&#xA;&#xA;        .notice.tip {&#xA;            --title-background-color: #363;&#xA;            --content-background-color: #121;&#xA;        }&#xA;&#xA;        .notice.warning {&#xA;            --title-background-color: #800;&#xA;            --content-background-color: #400;&#xA;        }&#xA;    }&#xA;&#xA;    body.dark .notice {&#xA;        --title-color: #fff;&#xA;        --title-background-color: #069;&#xA;        --content-color: #ddd;&#xA;        --content-background-color: #023;&#xA;    }&#xA;&#xA;    body.dark .notice.info {&#xA;        --title-background-color: #a50;&#xA;        --content-background-color: #420;&#xA;    }&#xA;&#xA;    body.dark .notice.tip {&#xA;        --title-background-color: #363;&#xA;        --content-background-color: #121;&#xA;    }&#xA;&#xA;    body.dark .notice.warning {&#xA;        --title-background-color: #800;&#xA;        --content-background-color: #400;&#xA;    }&#xA;&#xA;     &#xA;    .notice {&#xA;        padding: 18px;&#xA;        line-height: 24px;&#xA;        margin-bottom: 24px;&#xA;        border-radius: 4px;&#xA;        color: var(--content-color);&#xA;        background: var(--content-background-color);&#xA;    }&#xA;&#xA;    .notice p:last-child {&#xA;        margin-bottom: 0&#xA;    }&#xA;&#xA;     &#xA;    .notice-title {&#xA;        margin: -18px -18px 12px;&#xA;        padding: 4px 18px;&#xA;        border-radius: 4px 4px 0 0;&#xA;        font-weight: 700;&#xA;        color: var(--title-color);&#xA;        background: var(--title-background-color);&#xA;    }&#xA;&#xA;     &#xA;    .icon-notice {&#xA;        display: inline-flex;&#xA;        align-self: center;&#xA;        margin-right: 8px;&#xA;    }&#xA;&#xA;    .icon-notice img,&#xA;    .icon-notice svg {&#xA;        height: 1em;&#xA;        width: 1em;&#xA;        fill: currentColor;&#xA;    }&#xA;&#xA;    .icon-notice img,&#xA;    .icon-notice.baseline svg {&#xA;        top: .125em;&#xA;        position: relative;&#xA;    }&#xA;&lt;/style&gt;&lt;div class=&#34;notice warning&#34; &gt;&#xA;    &lt;p class=&#34;notice-title&#34;&gt;&#xA;        &lt;span class=&#34;icon-notice baseline&#34;&gt;&#xA;            &#xA;        &lt;/span&gt;Warnung&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>14.04.2025 - Usinger Spielerei</title>
+      <link>https://preview.usinger-spielerei.de/termine/2025-04-14-spielerei/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://preview.usinger-spielerei.de/termine/2025-04-14-spielerei/</guid>
+      <description>&lt;iframe width=&#34;100%&#34; height=&#34;600px&#34; frameBorder=&#34;0&#34; src=&#34;https://umap.openstreetmap.fr/en/map/usingen-evangelisches-gemeindehaus_1158423?scaleControl=true&amp;miniMap=true&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=true&amp;searchControl=true&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=null&amp;onLoadPanel=none&amp;captionBar=true&amp;fullscreenControl=null//&#34;&gt;&lt;/iframe&gt;</description>
+    </item>
+    <item>
+      <title>12.05.2025 - Usinger Spielerei</title>
+      <link>https://preview.usinger-spielerei.de/termine/2025-05-12-spielerei/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://preview.usinger-spielerei.de/termine/2025-05-12-spielerei/</guid>
+      <description>&lt;iframe width=&#34;100%&#34; height=&#34;600px&#34; frameBorder=&#34;0&#34; src=&#34;https://umap.openstreetmap.fr/en/map/usingen-evangelisches-gemeindehaus_1158423?scaleControl=true&amp;miniMap=true&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=true&amp;searchControl=true&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=null&amp;onLoadPanel=none&amp;captionBar=true&amp;fullscreenControl=null//&#34;&gt;&lt;/iframe&gt;</description>
+    </item>
+  </channel>
+</rss>
