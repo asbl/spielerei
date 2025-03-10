@@ -7,7 +7,7 @@ where: "Bürgerhaus Eschbach, Schulstraße 15, 61250 Usingen"
 description: "Bürgerhaus Eschbach, Schulstraße 15, 61250 Usingen"
 orga: "Usinger Spielerei"
 orgaEmail: "vorstand@usinger-spielerei.de"
-weight: 5
+weight: 7
 image: images/game6.jpg
 bannerImages:
   - /images/IMG_2118.jpeg
