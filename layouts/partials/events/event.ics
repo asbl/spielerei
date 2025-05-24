@@ -7,7 +7,7 @@
   ` "summary"      (dict "text" .Title "lang" "de-CH") `` `
   ` "eventStart"   (dict "dateTime" .Params.startDate "timeZoneID" "Europe/Zurich") `` `
   ` "eventEnd"     (dict "dateTime" .Params.endDate "timeZoneID" "Europe/Zurich") `` `
-  ` "location"     (dict "text" .Params.location "lang" "de-CH") `` `
+  ` "location"     (dict "text" .Params.where "lang" "de-CH") `` `
   ` "url"          (.OutputFormats.Get "HTML").Permalink `` `
   ` "contact"      (dict "text" (printf "%s: %s" .Params.orga .Params.orgaEmail) "lang" "de-CH") `` `
   ` "color"        "crimson" `` `
