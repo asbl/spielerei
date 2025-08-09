@@ -26,7 +26,7 @@ jobs:
       - name: "Hugo"
         uses: ./.github/actions/hugo
         with:
-          hugo-version: 0.139.3
+          hugo-version: 0.148.2
 
       - name: "Artifact / Upload"
         uses: actions/upload-artifact@v4

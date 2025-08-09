@@ -24,7 +24,7 @@ jobs:
       - name: "Setup Hugo"
         uses: ./.github/actions/hugo
         with:
-          hugo-version: 0.139.3
+          hugo-version: 0.148.2
 
       - name: "Build with Hugo"
         shell: bash
