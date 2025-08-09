@@ -62,7 +62,7 @@ jobs:
 
           echo "==> Run SSH Host Key Scan"
           # Server-Schlüssel zu known_hosts hinzufügen
-          ssh-keyscan -p "$SERVER_PORT" "$SERVER_HOST" >> ~/.ssh/known_hosts
+          ssh-keyscan -v -p "$SERVER_PORT" "$SERVER_HOST" >> ~/.ssh/known_hosts
 
           echo "==> Test SSH Connection"
           # Test SSH Connection
