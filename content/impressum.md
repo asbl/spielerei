@@ -17,3 +17,4 @@ Auf der Seite wird kein Nutzertracking betrieben. Serverseitig werden jedoch in 
 
 Es werden Daten (IP-Adresse) an folgende Dienste übergeben:
 * umap.openstreetmap.fr
+* getshirts.de
