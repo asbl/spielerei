@@ -7,7 +7,6 @@ where: "Christian-Wirth-Saal, Schlossplatz 1, 61250 Usingen"
 description: "Christian-Wirth-Saal, Schlossplatz 1, 61250 Usingen"
 orga: "VHS Bad Homburg"
 orgaEmail: "info@vhs-badhomburg.de"
-weight: 19
 image: images/game9.jpg
 bannerImages:
   - /images/IMG_2118.jpeg

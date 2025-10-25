@@ -7,7 +7,6 @@ where: "Messe Essen, Messeplatz 1, 45131 Essen"
 description: "Messe Essen, Messeplatz 1, 45131 Essen"
 orga: "Usinger Spielerei"
 orgaEmail: "vorstand@usinger-spielerei.de"
-weight: 21
 image: images/IMG_9204.jpeg
 bannerImages:
   - /images/IMG_2118.jpeg

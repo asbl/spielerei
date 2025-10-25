@@ -7,7 +7,6 @@ where: "Usinger Schafferei, Scheunengasse 16, 61250 Usingen"
 description: "Usinger Schafferei, Scheunengasse 16, 61250 Usingen"
 orga: "Usinger Spielerei"
 orgaEmail: "vorstand@usinger-spielerei.de"
-weight: 11
 image: images/IMG_2118.jpeg
 bannerImages:
   - /images/IMG_2118.jpeg

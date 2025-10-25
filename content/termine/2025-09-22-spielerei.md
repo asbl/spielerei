@@ -7,7 +7,6 @@ where: "-"
 description: ""
 orga: "Usinger Spielerei"
 orgaEmail: "vorstand@usinger-spielerei.de"
-weight: 20
 image: images/game6.jpg
 bannerImages:
   - /images/IMG_2118.jpeg

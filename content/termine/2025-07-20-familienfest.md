@@ -7,7 +7,6 @@ where: "Schlossgarten, 61250 Usingen"
 description: "Schlossgarten, 61250 Usingen"
 orga: "Usinger Spielerei"
 orgaEmail: "vorstand@usinger-spielerei.de"
-weight: 14
 image: images/game7.jpg
 bannerImages:
   - /images/IMG_2118.jpeg
