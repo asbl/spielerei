@@ -1,0 +1,16 @@
+---
+title: "02.03.2026 - Mitgliederversammlun (intern)"
+startDate: "2026-03-02T19:00:00+01:00"
+endDate: "2026-03-02T22:00:00+01:00"
+expiryDate: "2026-03-03T22:00:00+01:00"
+where: "Hugenottenkirche, 61250 Usingen"
+description: "Hugenottenkirche, 61250 Usingen"
+orga: "Usinger Spielerei"
+orgaEmail: "vorstand@usinger-spielerei.de"
+weight: 20
+image: images/web/IMG_9274.jpeg
+bannerImages:
+  - /images/IMG_2118.jpeg
+  - /images/IMG_2770.jpeg
+  - /images/IMG_2982.jpeg
+---

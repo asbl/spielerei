@@ -3,8 +3,8 @@ title: '11.04.2026: Spielewochenende'
 startDate: '2026-04-11T00:00:00+01:00'
 endDate: '2026-04-12T23:59:59+01:00'
 expiryDate: '2026-04-12T23:59:59+01:00'
-where: Bürgerhaus Merzhausen, An der Sporthalle 1, 61250 Usingen
-description: Bürgerhaus Merzhausen, SAn der Sporthalle 1, 61250 Usingen
+where: "Bürgerhaus Eschbach, Schulstraße 15, 61250 Usingen"
+description: "Bürgerhaus Eschbach, Schulstraße 15, 61250 Usingen"
 orga: Usinger Spielerei
 orgaEmail: vorstand@usinger-spielerei.de
 image: images/web/IMG_1736.jpeg
