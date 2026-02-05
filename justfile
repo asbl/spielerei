@@ -25,7 +25,7 @@ logs:
 status:
   docker compose ps
 
-# Erstellt eine neue Event-Datei mit Hugo.
+# Erstellt eine neue Event-Datei mit Hugo und einem python-skript.
 # DATE: Datum im Format YYYY-MM-DD
 # TYPE: Art der Veranstaltung (z.B. gemeindehaus, schafferei, wochenende-merzhausen)
 event DATE TYPE:
