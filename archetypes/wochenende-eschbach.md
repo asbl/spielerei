@@ -3,8 +3,8 @@ title: 'Spielewochenende'
 startDate: '1970-01-01T00:00:00+02:00'
 endDate: '1970-01-01T23:59:59+02:00'
 expiryDate: '1970-01-01T23:59:59+02:00'
-where: "Bürgerhaus Merzhausen, An der Sporthalle 1, 61250 Usingen"
-description: "Bürgerhaus Merzhausen, SAn der Sporthalle 1, 61250 Usingen"
+where: "Bürgerhaus Eschbach, Schulstraße 15, 61250 Usingen"
+description: "Bürgerhaus Eschbach, Schulstraße 15, 61250 Usingen"
 orga: "Usinger Spielerei"
 orgaEmail: "vorstand@usinger-spielerei.de"
 image: images/web/IMG_1736.jpeg
