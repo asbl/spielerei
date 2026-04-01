@@ -72,3 +72,39 @@ jobs:
           # Rsync mit sshpass
           rsync --progress -avz -e "ssh -p $SERVER_PORT" public/ "$SERVER_USER@$SERVER_HOST:$SERVER_PATH"
 
+  deploy-spielerei-hugo:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      
+      - name: "Artifact / Download"
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: public
+
+      - name: "Deploy to spielerei-hugo"
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SPIELEREI_HUGO_SERVER_KEY }}
+          SERVER_PORT: ${{ secrets.SPIELEREI_HUGO_PORT }}
+          SERVER_USER: ${{ secrets.SPIELEREI_HUGO_USER }}
+          SERVER_HOST: ${{ secrets.SPIELEREI_HUGO_SERVER_NAME }}
+          SERVER_PATH: ${{ secrets.SPIELEREI_HUGO_PATH }}
+        run: |
+          echo "==> Configure SSH Key"
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+          echo "==> Run SSH Host Key Scan"
+          # Server-Schlüssel zu known_hosts hinzufügen
+          ssh-keyscan -v -p "$SERVER_PORT" "$SERVER_HOST" >> ~/.ssh/known_hosts
+
+          echo "==> Test SSH Connection"
+          # Test SSH Connection
+          ssh -v -p "$SERVER_PORT" "$SERVER_USER@$SERVER_HOST" echo "SSH connection successful"
+
+          echo "==> Upload files to html folder"
+          # Rsync mit sshpass
+          rsync --progress -avz -e "ssh -p $SERVER_PORT" public/ "$SERVER_USER@$SERVER_HOST:$SERVER_PATH/html"
+
